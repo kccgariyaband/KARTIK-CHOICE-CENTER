@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Kartik Choice Center | Gariyaband</title>
+<title>Kartik Choice Center | KCC Gariyaband</title>
 
 <meta name="description"
-content="Kartik Choice Center & Lok Sewa Kendra, Gariyaband - Online, Government, Printing, PVC, Scholarship, Admission और Job Services.">
+content="Kartik Choice Center & Lok Sewa Kendra, Gariyaband - Online Government Services, PAN Card, PVC Card, Scholarship, Jobs, Printing and more.">
 
 <style>
 
@@ -15,7 +15,6 @@ content="Kartik Choice Center & Lok Sewa Kendra, Gariyaband - Online, Government
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
 }
 
 html{
@@ -23,42 +22,53 @@ html{
 }
 
 body{
-    background:#f4f8ff;
+    font-family:Arial, sans-serif;
+    background:#f5f8fc;
     color:#222;
     overflow-x:hidden;
 }
 
 :root{
-    --blue:#003366;
-    --dark:#002244;
-    --gold:#FFD700;
-    --green:#25D366;
-    --light:#eef5ff;
-    --white:#ffffff;
+    --blue:#003b73;
+    --blue2:#0066b3;
+    --dark:#00254a;
+    --gold:#ffc400;
+    --light:#eef6ff;
+    --green:#25d366;
+    --white:#fff;
+    --gray:#667085;
+}
+
+a{
+    text-decoration:none;
 }
 
 /* ================= HEADER ================= */
 
 header{
-    background:rgba(0,51,102,.97);
-    color:white;
-    padding:10px 6%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
     position:sticky;
     top:0;
-    z-index:1000;
-    box-shadow:0 3px 18px rgba(0,0,0,.25);
+    z-index:9999;
+    background:rgba(0,59,115,.97);
+    box-shadow:0 4px 20px rgba(0,0,0,.18);
 }
 
-.logo-box{
+.header-inner{
+    max-width:1200px;
+    margin:auto;
+    padding:10px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo-area{
     display:flex;
     align-items:center;
     gap:10px;
 }
 
-.logo-box img{
+.logo-area img{
     width:52px;
     height:52px;
     border-radius:50%;
@@ -66,28 +76,33 @@ header{
     border:2px solid var(--gold);
 }
 
-.logo-text{
-    color:var(--gold);
-    font-size:22px;
+.logo-name{
+    color:white;
+    font-size:20px;
     font-weight:bold;
 }
 
-.logo-text small{
+.logo-name span{
+    color:var(--gold);
+}
+
+.logo-name small{
     display:block;
-    color:white;
-    font-size:10px;
+    font-size:9px;
     font-weight:normal;
-    margin-top:2px;
+    color:#dcecff;
+    margin-top:3px;
 }
 
 nav{
     display:flex;
-    gap:20px;
+    align-items:center;
+    gap:22px;
 }
 
 nav a{
     color:white;
-    text-decoration:none;
+    font-size:14px;
     font-weight:bold;
     transition:.3s;
 }
@@ -96,148 +111,179 @@ nav a:hover{
     color:var(--gold);
 }
 
-/* MOBILE MENU */
+.nav-contact{
+    background:var(--gold);
+    color:var(--blue)!important;
+    padding:10px 17px;
+    border-radius:25px;
+}
 
-.menu-btn{
+.menu{
     display:none;
-    font-size:28px;
     color:white;
+    font-size:28px;
     cursor:pointer;
 }
 
 /* ================= HERO ================= */
 
 .hero{
+    position:relative;
     min-height:88vh;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+
     background:
-    linear-gradient(rgba(0,35,75,.90),rgba(0,51,102,.86)),
+    linear-gradient(120deg,rgba(0,37,74,.97),rgba(0,85,145,.86)),
     url("https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1600");
 
     background-size:cover;
     background-position:center;
+}
 
-    display:flex;
+.hero-inner{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:70px 20px;
+    display:grid;
+    grid-template-columns:1.15fr .85fr;
+    gap:40px;
     align-items:center;
-    justify-content:center;
-    text-align:center;
-
-    color:white;
-    padding:50px 20px;
 }
 
 .hero-content{
-    max-width:1000px;
-    animation:fadeUp 1s ease;
+    color:white;
 }
 
-.badge{
+.hero-tag{
     display:inline-block;
-    background:var(--gold);
-    color:var(--blue);
-    padding:10px 22px;
+    background:rgba(255,196,0,.15);
+    border:1px solid rgba(255,196,0,.5);
+    color:var(--gold);
+    padding:9px 17px;
     border-radius:30px;
     font-weight:bold;
-    margin-bottom:22px;
-    box-shadow:0 5px 20px rgba(0,0,0,.3);
+    margin-bottom:20px;
 }
 
 .hero h1{
-    font-size:54px;
-    line-height:1.15;
-    margin-bottom:18px;
+    font-size:56px;
+    line-height:1.12;
+    margin-bottom:20px;
 }
 
 .hero h1 span{
     color:var(--gold);
 }
 
-.hero p{
-    font-size:21px;
-    line-height:1.6;
-    margin-bottom:30px;
+.hero-text{
+    font-size:20px;
+    line-height:1.7;
+    color:#e6f2ff;
+    margin-bottom:28px;
 }
 
-.hero-highlights{
+.hero-buttons{
     display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:12px;
-    margin-bottom:30px;
-}
-
-.highlight{
-    background:rgba(255,255,255,.12);
-    border:1px solid rgba(255,255,255,.25);
-    padding:10px 16px;
-    border-radius:25px;
-    font-size:14px;
-}
-
-.buttons{
-    display:flex;
-    justify-content:center;
     flex-wrap:wrap;
     gap:12px;
 }
 
 .btn{
-    display:inline-block;
-    padding:14px 28px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:14px 23px;
     border-radius:30px;
-    text-decoration:none;
     font-weight:bold;
     transition:.3s;
 }
 
 .btn:hover{
     transform:translateY(-3px);
-    box-shadow:0 8px 20px rgba(0,0,0,.3);
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
 }
 
-.call-btn{
+.btn-gold{
     background:var(--gold);
     color:var(--blue);
 }
 
-.whatsapp-btn{
+.btn-green{
     background:var(--green);
     color:white;
 }
 
-.service-btn{
+.btn-white{
     background:white;
     color:var(--blue);
 }
 
-/* ================= COMMON ================= */
+/* HERO CARD */
 
-section{
-    padding:75px 7%;
-}
-
-.section-title{
-    text-align:center;
-    color:var(--blue);
-    font-size:36px;
-    margin-bottom:10px;
-}
-
-.section-subtitle{
-    text-align:center;
-    color:#666;
-    margin-bottom:42px;
-    line-height:1.6;
-}
-
-/* ================= QUICK SERVICES ================= */
-
-.quick-section{
-    background:var(--blue);
+.hero-card{
+    background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.25);
+    backdrop-filter:blur(10px);
+    border-radius:28px;
+    padding:30px;
     color:white;
-    padding:35px 7%;
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
 }
 
-.quick-grid{
+.hero-card-top{
+    text-align:center;
+    padding-bottom:20px;
+    border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.hero-card-logo{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid var(--gold);
+    margin-bottom:12px;
+}
+
+.hero-card h2{
+    color:var(--gold);
+    font-size:24px;
+}
+
+.hero-card p{
+    color:#e6f2ff;
+    margin-top:6px;
+}
+
+.hero-list{
+    padding-top:20px;
+}
+
+.hero-list div{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:9px 0;
+    color:white;
+}
+
+.check{
+    color:var(--gold);
+    font-weight:bold;
+}
+
+/* ================= STATS ================= */
+
+.stats{
+    background:white;
+    padding:28px 20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.stats-grid{
     max-width:1100px;
     margin:auto;
     display:grid;
@@ -245,102 +291,209 @@ section{
     gap:15px;
 }
 
-.quick-card{
+.stat{
     text-align:center;
-    padding:18px 10px;
-    border-radius:15px;
-    background:rgba(255,255,255,.09);
-    border:1px solid rgba(255,255,255,.15);
+    border-right:1px solid #ddd;
 }
 
-.quick-card span{
-    font-size:30px;
+.stat:last-child{
+    border:none;
+}
+
+.stat strong{
     display:block;
-    margin-bottom:6px;
+    color:var(--blue);
+    font-size:28px;
 }
 
-.quick-card strong{
-    font-size:15px;
+.stat span{
+    color:var(--gray);
+    font-size:13px;
+}
+
+/* ================= COMMON ================= */
+
+.section{
+    padding:80px 20px;
+}
+
+.container{
+    max-width:1150px;
+    margin:auto;
+}
+
+.section-head{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-head .small{
+    color:var(--blue2);
+    font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-size:13px;
+}
+
+.section-head h2{
+    color:var(--blue);
+    font-size:38px;
+    margin:9px 0;
+}
+
+.section-head p{
+    color:var(--gray);
+    line-height:1.6;
 }
 
 /* ================= SERVICES ================= */
 
 .services{
-    background:white;
+    background:#f5f8fc;
 }
 
 .service-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:22px;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
 }
 
-.card{
-    padding:28px 20px;
-    border-radius:18px;
-    text-align:center;
-    background:#f8fbff;
-    box-shadow:0 5px 18px rgba(0,0,0,.10);
-    border-top:5px solid var(--blue);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-7px);
-    box-shadow:0 12px 28px rgba(0,0,0,.17);
-}
-
-.card-icon{
-    font-size:42px;
-    margin-bottom:15px;
-}
-
-.card h3{
-    color:var(--blue);
-    margin-bottom:10px;
-    font-size:21px;
-}
-
-.card p{
-    color:#666;
-    line-height:1.5;
-}
-
-/* ================= WHY KCC ================= */
-
-.why{
-    background:var(--light);
-}
-
-.why-grid{
-    max-width:1000px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:22px;
-}
-
-.why-card{
+.service{
     background:white;
-    padding:25px;
+    padding:25px 20px;
     border-radius:18px;
-    text-align:center;
-    box-shadow:0 5px 18px rgba(0,0,0,.08);
+    border:1px solid #e4ebf3;
+    box-shadow:0 5px 18px rgba(0,0,0,.06);
+    transition:.3s;
+    position:relative;
+    overflow:hidden;
 }
 
-.why-icon{
-    font-size:38px;
-    margin-bottom:12px;
+.service:before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:4px;
+    background:var(--gold);
 }
 
-.why-card h3{
+.service:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,59,115,.14);
+}
+
+.service-icon{
+    width:58px;
+    height:58px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:16px;
+    background:var(--light);
+    font-size:30px;
+    margin-bottom:16px;
+}
+
+.service h3{
     color:var(--blue);
     margin-bottom:8px;
 }
 
+.service p{
+    color:var(--gray);
+    font-size:14px;
+    line-height:1.6;
+}
+
+.service a{
+    display:inline-block;
+    margin-top:14px;
+    color:var(--blue2);
+    font-size:13px;
+    font-weight:bold;
+}
+
+/* ================= WHY ================= */
+
+.why{
+    background:white;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.why-card{
+    padding:30px;
+    border-radius:20px;
+    background:linear-gradient(145deg,#f7fbff,#fff);
+    border:1px solid #e4edf7;
+}
+
+.why-icon{
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.why-card h3{
+    color:var(--blue);
+    margin-bottom:10px;
+}
+
 .why-card p{
-    color:#666;
-    line-height:1.5;
+    color:var(--gray);
+    line-height:1.6;
+}
+
+/* ================= UPDATES ================= */
+
+.updates{
+    background:var(--light);
+}
+
+.update-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.update{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    border-left:5px solid var(--gold);
+    box-shadow:0 5px 15px rgba(0,0,0,.07);
+}
+
+.update-icon{
+    font-size:32px;
+    margin-bottom:12px;
+}
+
+.update h3{
+    color:var(--blue);
+    margin-bottom:10px;
+}
+
+.update p{
+    color:var(--gray);
+    font-size:14px;
+    line-height:1.6;
+}
+
+.update-btn{
+    display:inline-block;
+    margin-top:16px;
+    background:var(--blue);
+    color:white;
+    padding:9px 14px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
 }
 
 /* ================= ABOUT ================= */
@@ -349,120 +502,144 @@ section{
     background:white;
 }
 
-.about-box{
-    max-width:900px;
-    margin:auto;
-    background:linear-gradient(135deg,#eef5ff,#ffffff);
-    padding:40px 35px;
-    border-radius:22px;
-    box-shadow:0 5px 20px rgba(0,0,0,.10);
-    text-align:center;
-    border:1px solid #dce8f7;
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+    align-items:center;
 }
 
-.about-box h3{
-    color:var(--blue);
-    font-size:28px;
+.about-box{
+    background:linear-gradient(135deg,var(--blue),var(--blue2));
+    color:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 15px 35px rgba(0,59,115,.2);
+}
+
+.about-box .tag{
+    color:var(--gold);
+    font-weight:bold;
+    margin-bottom:12px;
+}
+
+.about-box h2{
+    font-size:34px;
     margin-bottom:15px;
 }
 
 .about-box p{
     line-height:1.8;
-    color:#555;
-    margin-bottom:12px;
+    color:#eaf4ff;
 }
 
-/* ================= UPDATES ================= */
-
-.updates{
-    background:#f8fbff;
-}
-
-.update-grid{
+.about-points{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-    gap:22px;
+    gap:15px;
 }
 
-.update-card{
-    padding:25px;
-    border-radius:18px;
-    background:white;
-    box-shadow:0 5px 18px rgba(0,0,0,.10);
-    border-left:5px solid var(--gold);
-    transition:.3s;
+.about-point{
+    display:flex;
+    gap:14px;
+    align-items:flex-start;
 }
 
-.update-card:hover{
-    transform:translateY(-6px);
+.about-point-icon{
+    width:42px;
+    height:42px;
+    border-radius:12px;
+    background:var(--light);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
 }
 
-.update-icon{
-    font-size:35px;
+.about-point h3{
+    color:var(--blue);
+    margin-bottom:4px;
+}
+
+.about-point p{
+    color:var(--gray);
+    font-size:14px;
+    line-height:1.5;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+    background:
+    linear-gradient(120deg,var(--blue),var(--blue2));
+    color:white;
+    text-align:center;
+    padding:65px 20px;
+}
+
+.cta h2{
+    font-size:38px;
     margin-bottom:12px;
 }
 
-.update-card h3{
-    color:var(--blue);
-    margin-bottom:10px;
-}
-
-.update-card p{
-    color:#555;
-    line-height:1.6;
-    margin-bottom:18px;
-}
-
-.update-btn{
-    display:inline-block;
-    background:var(--blue);
-    color:white;
-    padding:10px 17px;
-    border-radius:25px;
-    text-decoration:none;
-    font-size:14px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.update-btn:hover{
-    background:#00509e;
+.cta p{
+    color:#e4f2ff;
+    margin-bottom:25px;
 }
 
 /* ================= CONTACT ================= */
 
 .contact{
-    background:var(--blue);
-    color:white;
-    text-align:center;
+    background:#f5f8fc;
 }
 
-.contact .section-title{
-    color:var(--gold);
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
 }
 
-.contact-info{
-    max-width:750px;
-    margin:auto;
-    line-height:2;
-    font-size:18px;
+.contact-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 18px rgba(0,0,0,.07);
 }
 
-.contact-box{
-    margin:30px auto;
-    max-width:650px;
-    padding:25px;
-    background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.15);
-    border-radius:18px;
+.contact-card h3{
+    color:var(--blue);
+    margin-bottom:20px;
 }
 
-.contact-buttons{
-    margin-top:25px;
+.contact-item{
     display:flex;
+    gap:13px;
+    margin:17px 0;
+    color:#555;
+    line-height:1.5;
+}
+
+.contact-item b{
+    color:var(--blue);
+}
+
+.map-box{
+    min-height:280px;
+    border-radius:20px;
+    background:linear-gradient(135deg,#dceeff,#f8fbff);
+    display:flex;
+    align-items:center;
     justify-content:center;
-    gap:12px;
-    flex-wrap:wrap;
+    text-align:center;
+    padding:25px;
+}
+
+.map-box div{
+    color:var(--blue);
+}
+
+.map-box .map-icon{
+    font-size:50px;
+    margin-bottom:10px;
 }
 
 /* ================= FOOTER ================= */
@@ -471,117 +648,115 @@ footer{
     background:var(--dark);
     color:white;
     text-align:center;
-    padding:25px 15px;
-    font-size:14px;
+    padding:28px 15px;
+}
+
+footer .brand{
+    color:var(--gold);
+    font-weight:bold;
+    font-size:17px;
 }
 
 footer p{
-    margin:6px 0;
-}
-
-.footer-brand{
-    color:var(--gold);
-    font-weight:bold;
+    margin:7px 0;
+    font-size:13px;
+    color:#cbd9e8;
 }
 
 /* ================= WHATSAPP ================= */
 
-.whatsapp-float{
+.whatsapp{
     position:fixed;
-    bottom:20px;
-    right:20px;
-
+    right:18px;
+    bottom:18px;
     width:62px;
     height:62px;
-
     border-radius:50%;
     background:var(--green);
     color:white;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
-    font-size:30px;
-    text-decoration:none;
-
-    box-shadow:0 5px 20px rgba(0,0,0,.35);
-
-    z-index:9999;
-    transition:.3s;
-
+    font-size:31px;
+    box-shadow:0 7px 22px rgba(0,0,0,.3);
+    z-index:99999;
     animation:pulse 2s infinite;
 }
 
-.whatsapp-float:hover{
-    transform:scale(1.1);
-}
-
-/* ================= ANIMATION ================= */
-
-@keyframes fadeUp{
-    from{
-        opacity:0;
-        transform:translateY(25px);
-    }
-
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
 @keyframes pulse{
-    0%{
-        box-shadow:0 0 0 0 rgba(37,211,102,.6);
-    }
-
-    70%{
-        box-shadow:0 0 0 14px rgba(37,211,102,0);
-    }
-
-    100%{
-        box-shadow:0 0 0 0 rgba(37,211,102,0);
-    }
+    0%{box-shadow:0 0 0 0 rgba(37,211,102,.5);}
+    70%{box-shadow:0 0 0 14px rgba(37,211,102,0);}
+    100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}
 }
 
 /* ================= MOBILE ================= */
 
-@media(max-width:768px){
+@media(max-width:900px){
 
-    header{
-        padding:9px 4%;
+    .hero-inner{
+        grid-template-columns:1fr;
+        text-align:center;
     }
 
-    .logo-box img{
+    .hero-card{
+        max-width:500px;
+        margin:auto;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .update-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:700px){
+
+    .header-inner{
+        padding:9px 15px;
+    }
+
+    .logo-area img{
         width:45px;
         height:45px;
     }
 
-    .logo-text{
+    .logo-name{
         font-size:17px;
     }
 
-    .logo-text small{
-        font-size:8px;
-    }
-
-    .menu-btn{
+    .menu{
         display:block;
     }
 
     nav{
+        display:none;
         position:absolute;
-        top:68px;
+        top:64px;
         left:0;
         width:100%;
         background:var(--blue);
-
-        display:none;
         flex-direction:column;
         gap:0;
-
-        box-shadow:0 8px 15px rgba(0,0,0,.25);
+        box-shadow:0 8px 18px rgba(0,0,0,.2);
     }
 
     nav.active{
@@ -589,66 +764,82 @@ footer p{
     }
 
     nav a{
-        padding:15px 6%;
+        width:100%;
+        padding:15px 20px;
         border-bottom:1px solid rgba(255,255,255,.1);
     }
 
+    .nav-contact{
+        background:none;
+        color:white!important;
+        border-radius:0;
+    }
+
     .hero{
-        min-height:85vh;
-        padding:40px 18px;
+        min-height:auto;
+    }
+
+    .hero-inner{
+        padding:55px 18px;
     }
 
     .hero h1{
-        font-size:35px;
+        font-size:38px;
     }
 
-    .hero p{
+    .hero-text{
         font-size:17px;
     }
 
-    .highlight{
-        font-size:12px;
-        padding:8px 12px;
+    .hero-card{
+        padding:23px;
     }
 
-    section{
-        padding:55px 5%;
-    }
-
-    .section-title{
-        font-size:29px;
-    }
-
-    .quick-section{
-        padding:25px 5%;
-    }
-
-    .quick-grid{
+    .stats-grid{
         grid-template-columns:repeat(2,1fr);
+        gap:20px 5px;
     }
 
-    .quick-card{
-        padding:15px 8px;
+    .stat{
+        border:none;
     }
 
-    .about-box{
-        padding:28px 18px;
-    }
-
-    .about-box h3{
+    .stat strong{
         font-size:24px;
     }
 
-    .btn{
-        padding:12px 21px;
+    .section{
+        padding:60px 15px;
     }
 
-    .whatsapp-float{
-        width:56px;
-        height:56px;
-        right:16px;
-        bottom:16px;
+    .section-head h2{
+        font-size:30px;
     }
+
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+    .update-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about-box{
+        padding:28px 22px;
+    }
+
+    .about-box h2{
+        font-size:28px;
+    }
+
+    .cta h2{
+        font-size:29px;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
 }
 
 </style>
@@ -656,601 +847,16 @@ footer p{
 
 <body>
 
-
 <!-- ================= HEADER ================= -->
 
 <header>
 
-<div class="logo-box">
+<div class="header-inner">
 
-<img src="my wb logo.jpeg" alt="KCC Gariyaband Logo">
+<div class="logo-area">
 
-<div class="logo-text">
-KCC Gariyaband
-<small>Kartik Choice Center</small>
-</div>
+<img src="my wb logo.jpeg" alt="KCC Logo">
 
-</div>
-
-
-<div class="menu-btn" onclick="toggleMenu()">
-☰
-</div>
-
-
-<nav id="navbar">
-
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#updates">Updates</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-
-</nav>
-
-</header>
-
-
-<!-- ================= HERO ================= -->
-
-<section class="hero" id="home">
-
-<div class="hero-content">
-
-<div class="badge">
-🏆 KCC Gariyaband
-</div>
-
-<h1>
-Welcome To <span>Kartik Choice Center</span>
-</h1>
-
-<p>
-आपकी सभी Online एवं Government Services का
-<strong>भरोसेमंद केंद्र</strong>
-</p>
-
-
-<div class="hero-highlights">
-
-<div class="highlight">🪪 PAN Services</div>
-
-<div class="highlight">💳 PVC Card</div>
-
-<div class="highlight">🎓 Scholarship</div>
-
-<div class="highlight">💼 Job Updates</div>
-
-<div class="highlight">📝 Online Forms</div>
-
-</div>
-
-
-<div class="buttons">
-
-<a href="tel:7415385054"
-class="btn call-btn">
-📞 Call Now
-</a>
-
-<a href="https://wa.me/917415385054"
-class="btn whatsapp-btn"
-target="_blank">
-💬 WhatsApp
-</a>
-
-<a href="#services"
-class="btn service-btn">
-🛠️ Our Services
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= QUICK SERVICES ================= -->
-
-<section class="quick-section">
-
-<div class="quick-grid">
-
-<div class="quick-card">
-<span>🪪</span>
-<strong>PAN Card</strong>
-</div>
-
-<div class="quick-card">
-<span>💳</span>
-<strong>PVC Card</strong>
-</div>
-
-<div class="quick-card">
-<span>🎓</span>
-<strong>Scholarship</strong>
-</div>
-
-<div class="quick-card">
-<span>💼</span>
-<strong>Job Updates</strong>
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= SERVICES ================= -->
-
-<section class="services" id="services">
-
-<h2 class="section-title">
-🛠️ Our Services
-</h2>
-
-<p class="section-subtitle">
-हमारे यहाँ विभिन्न Online एवं Government Services उपलब्ध हैं
-</p>
-
-
-<div class="service-grid">
-
-
-<div class="card">
-
-<div class="card-icon">🪪</div>
-
-<h3>PAN Card</h3>
-
-<p>
-New PAN Card, Correction एवं Reprint की सुविधा
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-icon">🆔</div>
-
-<h3>Aadhaar Services</h3>
-
-<p>
-Aadhaar Download एवं PVC Print की सुविधा
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-icon">💳</div>
-
-<h3>Ayushman Card</h3>
-
-<p>
-Ayushman Card Registration एवं Download
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-icon">📝</div>
-
-<h3>Online Forms</h3>
-
-<p>
-सरकारी एवं अन्य सभी Online Forms भरने की सुविधा
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-icon">🎓</div>
-
-<h3>Scholarship</h3>
-
-<p>
-Scholarship Registration एवं Renewal Form
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-icon">💼</div>
-
-<h3>Government Jobs</h3>
-
-<p>
-Latest Government Job एवं Recruitment Updates
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-icon">🚘</div>
-
-<h3>Driving Licence</h3>
-
-<p>
-Driving Licence से संबंधित Online Services
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="card-icon">🖨️</div>
-
-<h3>Printing & PVC</h3>
-
-<p>
-Color Print, PVC Card एवं अन्य Printing Services
-</p>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-<!-- ================= WHY KCC ================= -->
-
-<section class="why">
-
-<h2 class="section-title">
-⭐ Why Choose KCC?
-</h2>
-
-<p class="section-subtitle">
-Kartik Choice Center को चुनने के कुछ खास कारण
-</p>
-
-
-<div class="why-grid">
-
-
-<div class="why-card">
-
-<div class="why-icon">⚡</div>
-
-<h3>Fast Service</h3>
-
-<p>
-काम को आसान और तेज तरीके से पूरा करने का प्रयास।
-</p>
-
-</div>
-
-
-<div class="why-card">
-
-<div class="why-icon">🤝</div>
-
-<h3>Trusted Service</h3>
-
-<p>
-ग्राहकों को सरल एवं भरोसेमंद सेवा देने का प्रयास।
-</p>
-
-</div>
-
-
-<div class="why-card">
-
-<div class="why-icon">📍</div>
-
-<h3>Local Support</h3>
-
-<p>
-Gariyaband में Online एवं Digital Services की सुविधा।
-</p>
-
-</div>
-
-
-<div class="why-card">
-
-<div class="why-icon">💻</div>
-
-<h3>Digital Services</h3>
-
-<p>
-कई Online एवं Government Services एक ही स्थान पर।
-</p>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-<!-- ================= UPDATES ================= -->
-
-<section class="updates" id="updates">
-
-<h2 class="section-title">
-📰 Latest Updates
-</h2>
-
-<p class="section-subtitle">
-Job, Admission, Scholarship एवं Government Schemes की महत्वपूर्ण जानकारी
-</p>
-
-
-<div class="update-grid">
-
-
-<div class="update-card">
-
-<div class="update-icon">💼</div>
-
-<h3>Government Jobs</h3>
-
-<p>
-नई सरकारी भर्ती, Admit Card, Answer Key,
-Result एवं Recruitment Updates।
-</p>
-
-<a href="https://wa.me/917415385054"
-class="update-btn"
-target="_blank">
-
-📲 जानकारी लें
-
-</a>
-
-</div>
-
-
-<div class="update-card">
-
-<div class="update-icon">🎓</div>
-
-<h3>Admission Updates</h3>
-
-<p>
-College, ITI, D.El.Ed, B.Ed एवं अन्य
-Admission और Counselling की जानकारी।
-</p>
-
-<a href="https://wa.me/917415385054"
-class="update-btn"
-target="_blank">
-
-📲 Admission जानकारी
-
-</a>
-
-</div>
-
-
-<div class="update-card">
-
-<div class="update-icon">📚</div>
-
-<h3>Scholarship</h3>
-
-<p>
-Scholarship Registration, Renewal,
-e-KYC एवं महत्वपूर्ण Updates।
-</p>
-
-<a href="https://wa.me/917415385054"
-class="update-btn"
-target="_blank">
-
-📲 Scholarship जानकारी
-
-</a>
-
-</div>
-
-
-<div class="update-card">
-
-<div class="update-icon">📢</div>
-
-<h3>Government Schemes</h3>
-
-<p>
-सरकारी योजनाओं, Online Services एवं
-नई महत्वपूर्ण घोषणाओं की जानकारी।
-</p>
-
-<a href="https://wa.me/917415385054"
-class="update-btn"
-target="_blank">
-
-📲 योजना की जानकारी
-
-</a>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-<!-- ================= ABOUT ================= -->
-
-<section class="about" id="about">
-
-<h2 class="section-title">
-🏆 About KCC
-</h2>
-
-<p class="section-subtitle">
-Kartik Choice Center & Lok Sewa Kendra
-</p>
-
-
-<div class="about-box">
-
-<h3>
-आपकी सेवा में सदैव तत्पर
-</h3>
-
-<p>
-
-<strong>Kartik Choice Center & Lok Sewa Kendra</strong>
-Gariyaband में विभिन्न Online, Government एवं Digital
-Services उपलब्ध कराने का प्रयास करता है।
-
-</p>
-
-<p>
-
-हमारा उद्देश्य है कि लोगों को आवश्यक Online Services
-सरल, सुविधाजनक और एक ही स्थान पर उपलब्ध हो सकें।
-
-</p>
-
-</div>
-
-</section>
-
-
-<!-- ================= CONTACT ================= -->
-
-<section class="contact" id="contact">
-
-<h2 class="section-title">
-📞 Contact Us
-</h2>
-
-
-<div class="contact-info">
-
-
-<div class="contact-box">
-
-<p>
-<strong>
-Kartik Choice Center & Lok Sewa Kendra
-</strong>
-</p>
-
-<p>
-📍 Tiranga Chowk, Chhura Road,
-Gariyaband, Chhattisgarh
-</p>
-
-<p>
-📱 7415385054 / 9109462054
-</p>
-
-<p>
-✉️ kartikchoicecenter@gmail.com
-</p>
-
-
-<div class="contact-buttons">
-
-<a href="tel:7415385054"
-class="btn call-btn">
-
-📞 Call Now
-
-</a>
-
-
-<a href="https://wa.me/917415385054"
-class="btn whatsapp-btn"
-target="_blank">
-
-💬 WhatsApp
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-<p>
-© 2026 Kartik Choice Center & Lok Sewa Kendra | Gariyaband
-</p>
-
-<p class="footer-brand">
-Presented by KCC Gariyaband
-</p>
-
-<p>
-Digital Services • Online Forms • Government Services
-</p>
-
-</footer>
-
-
-<!-- ================= FLOATING WHATSAPP ================= -->
-
-<a href="https://wa.me/917415385054"
-target="_blank"
-class="whatsapp-float"
-aria-label="WhatsApp">
-
-💬
-
-</a>
-
-
-<!-- ================= JAVASCRIPT ================= -->
-
-<script>
-
-function toggleMenu(){
-
-    document
-    .getElementById("navbar")
-    .classList
-    .toggle("active");
-
-}
-
-
-/* Mobile menu click ke baad automatically close */
-
-document.querySelectorAll("#navbar a").forEach(function(link){
-
-    link.addEventListener("click",function(){
-
-        document
-        .getElementById("navbar")
-        .classList
-        .remove("active");
-
-    });
-
-});
-
-</script>
-
-
-</body>
-</html>
+<div class="logo-name">
+KARTIK <span>CHOICE CENTER</span>
+<small>
