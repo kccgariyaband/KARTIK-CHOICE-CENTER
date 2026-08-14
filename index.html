@@ -862,7 +862,7 @@ KARTIK <span>CHOICE CENTER</span>
 
 <nav id="nav">
 <a href="#home">Home</a>
-<a href="#services">Services</a>
+
 <a href="#updates">Updates</a>
 <a href="#about">About</a>
 <a href="#contact" class="nav-contact">Contact</a>
@@ -994,223 +994,9 @@ Jobs & Education Updates
 </section>
 
 
-<!-- ================= SERVICES ================= -->
 
-<!-- ================= PREMIUM SERVICES ================= -->
 
-<section class="section services" id="services">
 
-<div class="container">
-
-<div class="section-head">
-
-<div class="small">
-Our Services
-</div>
-
-<h2>
-हमारी प्रमुख सेवाएँ
-</h2>
-
-<p>
-आपके जरूरी ऑनलाइन, सरकारी और डिजिटल काम — एक ही जगह पर।
-</p>
-
-</div>
-
-
-<div class="service-grid">
-
-
-<!-- PAN CARD -->
-
-<div class="service">
-
-<div class="service-icon">
-🪪
-</div>
-
-<h3>
-PAN Card
-</h3>
-
-<p>
-नया PAN Card, Correction एवं संबंधित ऑनलाइन सेवाओं में सहायता।
-</p>
-
-<span class="service-badge">
-Online Service
-</span>
-
-</div>
-
-
-<!-- PVC CARD -->
-
-<div class="service">
-
-<div class="service-icon">
-💳
-</div>
-
-<h3>
-PVC Card Printing
-</h3>
-
-<p>
-PAN, Ayushman, e-Shram एवं विभिन्न ID Cards की PVC Printing।
-</p>
-
-<span class="service-badge">
-PVC Printing
-</span>
-
-</div>
-
-
-<!-- ONLINE FORM -->
-
-<div class="service">
-
-<div class="service-icon">
-📄
-</div>
-
-<h3>
-Online Forms
-</h3>
-
-<p>
-सरकारी भर्ती, Admission, Scholarship और अन्य ऑनलाइन फॉर्म।
-</p>
-
-<span class="service-badge">
-Form Filling
-</span>
-
-</div>
-
-
-<!-- PRINTING -->
-
-<div class="service">
-
-<div class="service-icon">
-🖨️
-</div>
-
-<h3>
-Printing & Xerox
-</h3>
-
-<p>
-Print, Photocopy, Lamination, Passport Photo एवं अन्य प्रिंटिंग सेवाएँ।
-</p>
-
-<span class="service-badge">
-Digital Printing
-</span>
-
-</div>
-
-
-<!-- E SHRAM -->
-
-<div class="service">
-
-<div class="service-icon">
-👷
-</div>
-
-<h3>
-e-Shram / Labour
-</h3>
-
-<p>
-e-Shram Card एवं Labour Card से संबंधित ऑनलाइन सहायता।
-</p>
-
-<span class="service-badge">
-Government Service
-</span>
-
-</div>
-
-
-<!-- AYUSHMAN -->
-
-<div class="service">
-
-<div class="service-icon">
-🏥
-</div>
-
-<h3>
-Ayushman Card
-</h3>
-
-<p>
-Ayushman Card से संबंधित ऑनलाइन सहायता एवं प्रिंटिंग सुविधा।
-</p>
-
-<span class="service-badge">
-Health Service
-</span>
-
-</div>
-
-
-<!-- DL RC -->
-
-<div class="service">
-
-<div class="service-icon">
-🚗
-</div>
-
-<h3>
-DL / RC Services
-</h3>
-
-<p>
-Driving Licence एवं RC PDF/PVC संबंधी सेवाओं में सहायता।
-</p>
-
-<span class="service-badge">
-Vehicle Service
-</span>
-
-</div>
-
-
-<!-- RECHARGE -->
-
-<div class="service">
-
-<div class="service-icon">
-📱
-</div>
-
-<h3>
-Mobile & DTH
-</h3>
-
-<p>
-Mobile एवं DTH Recharge सहित विभिन्न डिजिटल सेवाएँ।
-</p>
-
-<span class="service-badge">
-Digital Service
-</span>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
     <!-- ================= WHY KCC ================= -->
 
 <section class="section why">
@@ -1762,5 +1548,35 @@ document
 
 
 </body>
+<style>
+.service{
+    min-height:245px;
+    display:flex;
+    flex-direction:column;
+}
 
+.service p{
+    flex:1;
+}
+
+.service-badge{
+    display:inline-block;
+    align-self:flex-start;
+    margin-top:16px;
+    padding:6px 12px;
+    border-radius:20px;
+    background:#eef6ff;
+    color:#0066b3;
+    font-size:11px;
+    font-weight:bold;
+}
+
+.service-icon{
+    width:64px;
+    height:64px;
+    border-radius:18px;
+    background:linear-gradient(145deg,#e8f4ff,#fff8d9);
+    box-shadow:0 7px 18px rgba(0,59,115,.08);
+}
+</style>
 </html>
