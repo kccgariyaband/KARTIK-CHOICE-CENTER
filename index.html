@@ -8,7 +8,16 @@
 
 <meta name="description" content="Kartik Choice Center Gariyaband - Online Government Services, PAN Card, Voter Card, Ayushman Card, PVC Card, Printing, Online Forms and Digital Services.">
 
+<meta name="keywords" content="Kartik Choice Center, Gariyaband, CSC, Online Service, PAN Card, Voter Card, Ayushman Card, PVC Card, Printing">
+
+<meta name="author" content="Kartik Choice Center Gariyaband">
+
 <style>
+
+/* =========================================================
+   RESET
+========================================================= */
+
 *{
     margin:0;
     padding:0;
@@ -28,14 +37,19 @@ body{
 
 :root{
     --navy:#071b3a;
+    --navy2:#041329;
     --blue:#0866c6;
+    --blue2:#0878bd;
     --cyan:#12a4e8;
     --gold:#ffc928;
+    --gold2:#ffdf68;
     --green:#16c56b;
-    --white:#fff;
+    --white:#ffffff;
     --muted:#68758a;
+    --light:#f7f9fc;
     --border:#e5eaf2;
     --shadow:0 18px 50px rgba(7,27,58,.12);
+    --shadow2:0 10px 30px rgba(7,27,58,.08);
 }
 
 a{
@@ -43,11 +57,15 @@ a{
     color:inherit;
 }
 
-button{
+button,
+input,
+textarea{
     font:inherit;
 }
 
-/* ================= HEADER ================= */
+/* =========================================================
+   HEADER
+========================================================= */
 
 header{
     position:sticky;
@@ -55,6 +73,7 @@ header{
     z-index:9999;
     background:rgba(7,27,58,.97);
     box-shadow:0 5px 25px rgba(0,0,0,.15);
+    backdrop-filter:blur(12px);
 }
 
 .header{
@@ -66,8 +85,6 @@ header{
     align-items:center;
     justify-content:space-between;
 }
-
-/* LOGO - IMAGE KI JAGAH PERMANENT LOGO */
 
 .logo{
     display:flex;
@@ -85,16 +102,17 @@ header{
     align-items:center;
     justify-content:center;
     color:var(--navy);
-    font-size:19px;
+    font-size:17px;
     font-weight:900;
     line-height:1;
     text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
 
 .logo-circle small{
     display:block;
     font-size:8px;
-    margin-top:2px;
+    margin-top:3px;
 }
 
 .logo-text{
@@ -117,15 +135,15 @@ header{
 
 nav{
     display:flex;
-    gap:7px;
+    gap:6px;
     align-items:center;
 }
 
 nav a{
     color:white;
-    font-size:15px;
+    font-size:14px;
     font-weight:700;
-    padding:12px 16px;
+    padding:12px 15px;
     border-radius:22px;
     transition:.25s;
 }
@@ -147,7 +165,9 @@ nav .contact-nav{
     cursor:pointer;
 }
 
-/* ================= HERO ================= */
+/* =========================================================
+   HERO
+========================================================= */
 
 .hero{
     position:relative;
@@ -168,6 +188,17 @@ nav .contact-nav{
     border-radius:50%;
     right:-180px;
     bottom:-220px;
+}
+
+.hero:after{
+    content:"";
+    position:absolute;
+    width:350px;
+    height:350px;
+    border:1px solid rgba(255,255,255,.06);
+    border-radius:50%;
+    left:-180px;
+    top:-150px;
 }
 
 .hero-inner{
@@ -198,7 +229,7 @@ nav .contact-nav{
 }
 
 .hero h1{
-    font-size:64px;
+    font-size:62px;
     line-height:1.08;
     letter-spacing:-2px;
     margin-bottom:23px;
@@ -211,7 +242,7 @@ nav .contact-nav{
 .hero-text{
     max-width:700px;
     color:#dbe9fb;
-    font-size:19px;
+    font-size:18px;
     line-height:1.9;
     margin-bottom:32px;
 }
@@ -254,7 +285,14 @@ nav .contact-nav{
     color:var(--navy);
 }
 
-/* ================= HERO CARD ================= */
+.blue{
+    background:var(--blue);
+    color:white;
+}
+
+/* =========================================================
+   HERO CARD
+========================================================= */
 
 .hero-visual{
     position:relative;
@@ -269,13 +307,12 @@ nav .contact-nav{
     background:rgba(255,255,255,.10);
     border:1px solid rgba(255,255,255,.22);
     box-shadow:0 30px 70px rgba(0,0,0,.2);
+    backdrop-filter:blur(12px);
 }
 
 .profile{
     text-align:center;
 }
-
-/* PERMANENT LOGO */
 
 .profile-logo{
     width:125px;
@@ -288,7 +325,7 @@ nav .contact-nav{
     align-items:center;
     justify-content:center;
     color:var(--navy);
-    font-size:24px;
+    font-size:23px;
     font-weight:900;
     text-align:center;
     box-shadow:0 8px 25px rgba(0,0,0,.2);
@@ -302,7 +339,7 @@ nav .contact-nav{
 
 .profile h2{
     color:var(--gold);
-    font-size:28px;
+    font-size:27px;
 }
 
 .profile p{
@@ -324,6 +361,12 @@ nav .contact-nav{
     background:rgba(255,255,255,.08);
     border:1px solid rgba(255,255,255,.08);
     border-radius:17px;
+    transition:.3s;
+}
+
+.qs:hover{
+    transform:translateY(-4px);
+    background:rgba(255,255,255,.15);
 }
 
 .qs b{
@@ -354,7 +397,9 @@ nav .contact-nav{
     color:var(--green);
 }
 
-/* ================= STATS ================= */
+/* =========================================================
+   STATS
+========================================================= */
 
 .stats{
     position:relative;
@@ -395,7 +440,9 @@ nav .contact-nav{
     font-weight:700;
 }
 
-/* ================= COMMON ================= */
+/* =========================================================
+   COMMON
+========================================================= */
 
 .section{
     padding:100px 24px;
@@ -408,7 +455,7 @@ nav .contact-nav{
 
 .heading{
     text-align:center;
-    max-width:750px;
+    max-width:780px;
     margin:0 auto 50px;
 }
 
@@ -430,9 +477,12 @@ nav .contact-nav{
 .heading p{
     color:var(--muted);
     font-size:16px;
+    line-height:1.7;
 }
 
-/* ================= SERVICES ================= */
+/* =========================================================
+   SERVICES
+========================================================= */
 
 .services{
     background:#f7f9fc;
@@ -484,7 +534,7 @@ nav .contact-nav{
 
 .service h3{
     color:var(--navy);
-    font-size:20px;
+    font-size:19px;
     margin-bottom:9px;
 }
 
@@ -502,7 +552,20 @@ nav .contact-nav{
     font-weight:900;
 }
 
-/* ================= FEATURE ================= */
+.service-tag{
+    display:inline-block;
+    margin-top:12px;
+    padding:5px 10px;
+    border-radius:20px;
+    background:#eafaf2;
+    color:#07934c;
+    font-size:11px;
+    font-weight:800;
+}
+
+/* =========================================================
+   FEATURE
+========================================================= */
 
 .feature{
     background:linear-gradient(135deg,#071b3a,#0a67b9);
@@ -547,6 +610,7 @@ nav .contact-nav{
 
 .feature-item b{
     width:38px;
+    min-width:38px;
     height:38px;
     display:flex;
     align-items:center;
@@ -580,7 +644,13 @@ nav .contact-nav{
     margin:18px 0;
 }
 
-/* ================= ABOUT ================= */
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about{
+    background:white;
+}
 
 .about-grid{
     display:grid;
@@ -652,7 +722,9 @@ nav .contact-nav{
     font-size:13px;
 }
 
-/* ================= PROCESS ================= */
+/* =========================================================
+   PROCESS
+========================================================= */
 
 .process{
     background:#f7f9fc;
@@ -704,7 +776,61 @@ nav .contact-nav{
     line-height:1.7;
 }
 
-/* ================= CONTACT ================= */
+/* =========================================================
+   WHY US
+========================================================= */
+
+.why{
+    background:white;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.why-card{
+    padding:32px;
+    border-radius:24px;
+    border:1px solid var(--border);
+    background:#fff;
+    box-shadow:var(--shadow2);
+    transition:.3s;
+}
+
+.why-card:hover{
+    transform:translateY(-6px);
+    box-shadow:var(--shadow);
+}
+
+.why-icon{
+    width:62px;
+    height:62px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:18px;
+    background:#eaf5ff;
+    font-size:30px;
+    margin-bottom:18px;
+}
+
+.why-card h3{
+    color:var(--navy);
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.why-card p{
+    color:var(--muted);
+    font-size:14px;
+    line-height:1.8;
+}
+
+/* =========================================================
+   CONTACT
+========================================================= */
 
 .contact{
     background:white;
@@ -762,6 +888,14 @@ nav .contact-nav{
 .contact-item span{
     color:var(--muted);
     font-size:14px;
+    line-height:1.6;
+}
+
+.contact-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:22px;
 }
 
 .map-box{
@@ -786,7 +920,17 @@ nav .contact-nav{
     margin-bottom:25px;
 }
 
-/* ================= CTA ================= */
+.address-box{
+    padding:20px;
+    border-radius:18px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+    margin-bottom:20px;
+}
+
+/* =========================================================
+   CTA
+========================================================= */
 
 .cta{
     padding:75px 24px;
@@ -809,469 +953,8 @@ nav .contact-nav{
     color:#4f4b35;
     margin-bottom:28px;
     font-size:16px;
+    line-height:1.7;
 }
 
-/* ================= FOOTER ================= */
-
-footer{
-    background:#041329;
-    color:white;
-    padding:50px 24px 22px;
-}
-
-.footer-grid{
-    max-width:1200px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:1.4fr 1fr 1fr;
-    gap:45px;
-}
-
-.footer h3{
-    color:var(--gold);
-    margin-bottom:17px;
-    font-size:20px;
-}
-
-.footer p,
-.footer a{
-    color:#b9c9dd;
-    font-size:14px;
-    line-height:1.9;
-}
-
-.footer a{
-    display:block;
-    margin-bottom:6px;
-}
-
-.footer a:hover{
-    color:var(--gold);
-}
-
-.footer-bottom{
-    max-width:1200px;
-    margin:32px auto 0;
-    padding-top:22px;
-    border-top:1px solid rgba(255,255,255,.1);
-    text-align:center;
-    color:#8ea2bd;
-    font-size:12px;
-}
-
-/* ================= WHATSAPP ================= */
-
-.whatsapp{
-    position:fixed;
-    right:22px;
-    bottom:22px;
-    width:64px;
-    height:64px;
-    border-radius:50%;
-    background:#25d366;
-    color:white;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:32px;
-    box-shadow:0 10px 30px rgba(0,0,0,.25);
-    z-index:999;
-    transition:.3s;
-}
-
-.whatsapp:hover{
-    transform:scale(1.1);
-}
-
-/* ================= MOBILE ================= */
-
-@media(max-width:900px){
-
-    .hero-inner{
-        grid-template-columns:1fr;
-        text-align:center;
-        padding:65px 20px;
-    }
-
-    .hero-text{
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    .buttons{
-        justify-content:center;
-    }
-
-    .hero-visual{
-        margin-top:20px;
-    }
-
-    .service-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .process-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .feature-grid,
-    .about-grid,
-    .contact-grid{
-        grid-template-columns:1fr;
-    }
-
-    .footer-grid{
-        grid-template-columns:1fr 1fr;
-    }
-}
-
-@media(max-width:650px){
-
-    .header{
-        min-height:70px;
-        padding:10px 15px;
-    }
-
-    .logo-circle{
-        width:48px;
-        height:48px;
-        font-size:15px;
-    }
-
-    .logo-text{
-        font-size:16px;
-    }
-
-    .logo-text small{
-        font-size:8px;
-    }
-
-    nav{
-        display:none;
-        position:absolute;
-        top:70px;
-        left:0;
-        width:100%;
-        background:#071b3a;
-        padding:15px;
-        flex-direction:column;
-    }
-
-    nav.active{
-        display:flex;
-    }
-
-    nav a{
-        width:100%;
-        text-align:center;
-        font-size:15px;
-    }
-
-    .menu{
-        display:block;
-    }
-
-    .hero h1{
-        font-size:43px;
-        letter-spacing:-1px;
-    }
-
-    .hero-text{
-        font-size:16px;
-        line-height:1.75;
-    }
-
-    .badge{
-        font-size:12px;
-    }
-
-    .glass{
-        width:100%;
-        max-width:400px;
-    }
-
-    .float-card{
-        right:0;
-    }
-
-    .stats-inner{
-        grid-template-columns:1fr 1fr;
-        gap:20px;
-    }
-
-    .stat{
-        border-right:0;
-        border-bottom:1px solid var(--border);
-        padding-bottom:14px;
-    }
-
-    .stat:nth-child(3),
-    .stat:nth-child(4){
-        border-bottom:0;
-    }
-
-    .stat strong{
-        font-size:27px;
-    }
-
-    .section{
-        padding:70px 18px;
-    }
-
-    .heading h2{
-        font-size:32px;
-    }
-
-    .heading p{
-        font-size:14px;
-    }
-
-    .service-grid{
-        grid-template-columns:1fr;
-    }
-
-    .process-grid{
-        grid-template-columns:1fr;
-    }
-
-    .feature h2{
-        font-size:33px;
-    }
-
-    .about-box{
-        padding:27px;
-    }
-
-    .about-highlight{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .cta h2{
-        font-size:31px;
-    }
-
-    .footer-grid{
-        grid-template-columns:1fr;
-        gap:28px;
-    }
-}
-</style>
-</head>
-
-<body>
-
-<!-- HEADER -->
-
-<header>
-<div class="header">
-
-<a href="#home" class="logo">
-
-<div class="logo-circle">
-<div>
-Kartik
-<small>Choice</small>
-</div>
-</div>
-
-<div class="logo-text">
-KARTIK <span>CHOICE CENTER</span>
-<small>Online • Digital • Government Services</small>
-</div>
-
-</a>
-
-<div class="menu" onclick="toggleMenu()">☰</div>
-
-<nav id="nav">
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#about">About</a>
-<a href="#process">How It Works</a>
-<a href="#contact" class="contact-nav">Contact</a>
-</nav>
-
-</div>
-</header>
-
-
-<!-- HERO -->
-
-<section class="hero" id="home">
-
-<div class="hero-inner">
-
-<div>
-
-<div class="badge">
-⭐ भरोसेमंद डिजिटल सेवा केंद्र
-</div>
-
-<h1>
-आपका अपना<br>
-<span>Kartik Choice Center</span>
-</h1>
-
-<p class="hero-text">
-गरियाबंद में ऑनलाइन एवं डिजिटल सेवाओं के लिए
-एक भरोसेमंद स्थान। सरकारी दस्तावेज, ऑनलाइन फॉर्म,
-PVC कार्ड, प्रिंटिंग और अन्य डिजिटल सेवाएं एक ही जगह।
-</p>
-
-<div class="buttons">
-
-<a href="#services" class="btn gold">
-🚀 हमारी सेवाएं
-</a>
-
-<a href="https://wa.me/917415385054" class="btn green" target="_blank">
-💬 WhatsApp करें
-</a>
-
-<a href="tel:7415385054" class="btn white">
-📞 कॉल करें
-</a>
-
-</div>
-
-</div>
-
-
-<div class="hero-visual">
-
-<div class="glass">
-
-<div class="profile">
-
-<div class="profile-logo">
-<div>
-Kartik
-<small>Choice Center</small>
-</div>
-</div>
-
-<h2>Kartik Choice Center</h2>
-
-<p>Gariyaband • Chhattisgarh</p>
-
-</div>
-
-<div class="quick-services">
-
-<div class="qs">
-<b>🪪</b>
-<span>PVC Card</span>
-</div>
-
-<div class="qs">
-<b>📄</b>
-<span>Online Form</span>
-</div>
-
-<div class="qs">
-<b>🖨️</b>
-<span>Printing</span>
-</div>
-
-<div class="qs">
-<b>💻</b>
-<span>Digital Service</span>
-</div>
-
-</div>
-
-</div>
-
-<div class="float-card">
-● <span>Service Available</span>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- STATS -->
-
-<div class="stats">
-
-<div class="stats-inner">
-
-<div class="stat">
-<strong>2024+</strong>
-<span>सेवा का अनुभव</span>
-</div>
-
-<div class="stat">
-<strong>20+</strong>
-<span>डिजिटल सेवाएं</span>
-</div>
-
-<div class="stat">
-<strong>1000+</strong>
-<span>ग्राहक सेवाएं</span>
-</div>
-
-<div class="stat">
-<strong>100%</strong>
-<span>विश्वसनीय प्रयास</span>
-</div>
-
-</div>
-
-</div>
-
-
-<!-- SERVICES -->
-
-<section class="section services" id="services">
-
-<div class="container">
-
-<div class="heading">
-
-<div class="kicker">Our Services</div>
-
-<h2>हमारी प्रमुख सेवाएं</h2>
-
-<p>
-आपके जरूरी ऑनलाइन, सरकारी और डिजिटल काम
-एक ही स्थान पर।
-</p>
-
-</div>
-
-
-<div class="service-grid">
-
-<div class="service">
-<div class="icon">🪪</div>
-<h3>Voter Card</h3>
-<p>वोटर कार्ड से संबंधित ऑनलाइन आवेदन एवं उपलब्ध डिजिटल सेवाएं।</p>
-<a href="#contact">जानकारी लें →</a>
-</div>
-
-<div class="service">
-<div class="icon">💳</div>
-<h3>PAN Card</h3>
-<p>नया PAN Card एवं उपलब्ध PAN संबंधी ऑनलाइन सेवाएं।</p>
-<a href="#contact">जानकारी लें →</a>
-</div>
-
-<div class="service">
-<div class="icon">🏥</div>
-<h3>Ayushman Card</h3>
-<p>आयुष्मान कार्ड से संबंधित उपलब्ध ऑनलाइन सेवाएं।</p>
-<a href="#contact">जानकारी लें →</a>
-</div>
-
-<div class="service">
-<div class="icon">🪪</div>
-<h3>PVC Card Printing</h3>
-<p>विभिन्न ID एवं दस्तावेजों के हाई क्वालिटी PVC कार्ड।</p>
-<a href="#contact">ऑर्डर करें →</a>
-</div>
-
-<div class="servic
+/* =========================================================
+   FOOTER
