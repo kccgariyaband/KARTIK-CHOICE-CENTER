@@ -7,7 +7,7 @@
 <title>Kartik Choice Center | KCC Gariyaband</title>
 
 <meta name="description"
-content="Kartik Choice Center & Lok Sewa Kendra, Gariyaband - Online Government Services, PAN Card, PVC Card, Printing, Jobs, Education और Digital Services.">
+content="Kartik Choice Center & Lok Sewa Kendra Gariyaband - PAN Card, Voter Card, PVC Card, Online Forms, Printing, Jobs, Education और Digital Services.">
 
 <style>
 
@@ -30,27 +30,33 @@ overflow-x:hidden;
 
 :root{
 --blue:#003b73;
---blue2:#0066b3;
---dark:#00254a;
+--blue2:#0074c8;
+--dark:#001d3a;
 --gold:#ffc400;
---light:#eef6ff;
+--gold2:#ffda44;
+--light:#eef7ff;
 --green:#25d366;
 --white:#fff;
 --gray:#667085;
+--border:#e3ebf4;
 }
 
 a{
 text-decoration:none;
 }
 
-/* HEADER */
+img{
+max-width:100%;
+}
+
+/* ================= HEADER ================= */
 
 header{
 position:sticky;
 top:0;
 z-index:9999;
-background:rgba(0,59,115,.98);
-box-shadow:0 4px 20px rgba(0,0,0,.18);
+background:rgba(0,43,82,.98);
+box-shadow:0 5px 25px rgba(0,0,0,.18);
 }
 
 .header-inner{
@@ -65,7 +71,7 @@ justify-content:space-between;
 .logo-area{
 display:flex;
 align-items:center;
-gap:10px;
+gap:11px;
 }
 
 .logo-area img{
@@ -74,12 +80,14 @@ height:52px;
 border-radius:50%;
 object-fit:cover;
 border:2px solid var(--gold);
+background:white;
 }
 
 .logo-name{
 color:white;
-font-size:20px;
+font-size:19px;
 font-weight:bold;
+line-height:1.2;
 }
 
 .logo-name span{
@@ -90,31 +98,38 @@ color:var(--gold);
 display:block;
 font-size:9px;
 font-weight:normal;
-color:#dcecff;
-margin-top:3px;
+color:#d9ebff;
+margin-top:4px;
 }
 
 nav{
 display:flex;
 align-items:center;
-gap:20px;
+gap:8px;
 }
 
 nav a{
 color:white;
 font-size:14px;
 font-weight:bold;
+padding:10px 13px;
+border-radius:20px;
+transition:.3s;
 }
 
 nav a:hover{
+background:rgba(255,255,255,.1);
 color:var(--gold);
 }
 
 .nav-contact{
 background:var(--gold);
 color:var(--blue)!important;
-padding:10px 17px;
-border-radius:25px;
+}
+
+.nav-contact:hover{
+background:var(--gold2)!important;
+color:var(--blue)!important;
 }
 
 .menu{
@@ -124,14 +139,15 @@ font-size:28px;
 cursor:pointer;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 
 .hero{
-min-height:72vh;
+position:relative;
+min-height:75vh;
 display:flex;
 align-items:center;
 background:
-linear-gradient(120deg,rgba(0,37,74,.97),rgba(0,85,145,.86)),
+linear-gradient(120deg,rgba(0,29,58,.97),rgba(0,91,155,.86)),
 url("https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1600");
 background-size:cover;
 background-position:center;
@@ -141,10 +157,10 @@ background-position:center;
 width:100%;
 max-width:1200px;
 margin:auto;
-padding:70px 20px;
+padding:80px 20px;
 display:grid;
 grid-template-columns:1.15fr .85fr;
-gap:40px;
+gap:45px;
 align-items:center;
 }
 
@@ -154,8 +170,8 @@ color:white;
 
 .hero-tag{
 display:inline-block;
-background:rgba(255,196,0,.15);
-border:1px solid rgba(255,196,0,.5);
+background:rgba(255,196,0,.13);
+border:1px solid rgba(255,196,0,.55);
 color:var(--gold);
 padding:9px 17px;
 border-radius:30px;
@@ -164,8 +180,8 @@ margin-bottom:20px;
 }
 
 .hero h1{
-font-size:56px;
-line-height:1.12;
+font-size:58px;
+line-height:1.1;
 margin-bottom:20px;
 }
 
@@ -174,10 +190,11 @@ color:var(--gold);
 }
 
 .hero-text{
-font-size:20px;
-line-height:1.7;
-color:#e6f2ff;
-margin-bottom:28px;
+font-size:19px;
+line-height:1.8;
+color:#e5f2ff;
+margin-bottom:30px;
+max-width:650px;
 }
 
 .hero-buttons{
@@ -190,14 +207,22 @@ gap:12px;
 display:inline-flex;
 align-items:center;
 justify-content:center;
-padding:14px 23px;
+padding:13px 22px;
 border-radius:30px;
 font-weight:bold;
+transition:.3s;
+border:none;
+cursor:pointer;
+}
+
+.btn:hover{
+transform:translateY(-2px);
 }
 
 .btn-gold{
 background:var(--gold);
 color:var(--blue);
+box-shadow:0 7px 20px rgba(255,196,0,.2);
 }
 
 .btn-green{
@@ -213,12 +238,13 @@ color:var(--blue);
 /* HERO CARD */
 
 .hero-card{
-background:rgba(255,255,255,.10);
-border:1px solid rgba(255,255,255,.25);
-backdrop-filter:blur(10px);
+background:rgba(255,255,255,.11);
+border:1px solid rgba(255,255,255,.28);
+backdrop-filter:blur(12px);
 border-radius:28px;
 padding:30px;
 color:white;
+box-shadow:0 20px 50px rgba(0,0,0,.18);
 }
 
 .hero-card-top{
@@ -228,42 +254,49 @@ border-bottom:1px solid rgba(255,255,255,.2);
 }
 
 .hero-card-logo{
-width:90px;
-height:90px;
+width:95px;
+height:95px;
 border-radius:50%;
 object-fit:cover;
 border:3px solid var(--gold);
+background:white;
 margin-bottom:12px;
 }
 
 .hero-card h2{
 color:var(--gold);
-font-size:24px;
+font-size:25px;
 }
 
 .hero-card p{
 color:#e6f2ff;
-margin-top:6px;
+margin-top:7px;
 }
 
 .hero-list{
-padding-top:20px;
+padding-top:18px;
 }
 
 .hero-list div{
-padding:9px 0;
+padding:10px 0;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.hero-list div:last-child{
+border:none;
 }
 
 .check{
 color:var(--gold);
 font-weight:bold;
+margin-right:5px;
 }
 
-/* STATS */
+/* ================= STATS ================= */
 
 .stats{
 background:white;
-padding:28px 20px;
+padding:30px 20px;
 box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
@@ -286,7 +319,8 @@ border:none;
 .stat strong{
 display:block;
 color:var(--blue);
-font-size:28px;
+font-size:29px;
+margin-bottom:4px;
 }
 
 .stat span{
@@ -294,10 +328,10 @@ color:var(--gray);
 font-size:13px;
 }
 
-/* COMMON */
+/* ================= COMMON ================= */
 
 .section{
-padding:80px 20px;
+padding:85px 20px;
 }
 
 .container{
@@ -307,15 +341,15 @@ margin:auto;
 
 .section-head{
 text-align:center;
-margin-bottom:45px;
+margin-bottom:48px;
 }
 
 .section-head .small{
 color:var(--blue2);
 font-weight:bold;
-text-transform:uppercase;
 letter-spacing:1px;
 font-size:13px;
+text-transform:uppercase;
 }
 
 .section-head h2{
@@ -326,10 +360,10 @@ margin:9px 0;
 
 .section-head p{
 color:var(--gray);
-line-height:1.6;
+line-height:1.7;
 }
 
-/* SERVICES */
+/* ================= SERVICES ================= */
 
 .services{
 background:#f5f8fc;
@@ -338,17 +372,23 @@ background:#f5f8fc;
 .service-grid{
 display:grid;
 grid-template-columns:repeat(4,1fr);
-gap:20px;
+gap:22px;
 }
 
 .service{
 background:white;
-padding:25px 20px;
-border-radius:18px;
-border:1px solid #e4ebf3;
-box-shadow:0 5px 18px rgba(0,0,0,.06);
+padding:26px 21px;
+border-radius:20px;
+border:1px solid var(--border);
+box-shadow:0 7px 22px rgba(0,0,0,.055);
 position:relative;
 overflow:hidden;
+transition:.3s;
+}
+
+.service:hover{
+transform:translateY(-7px);
+box-shadow:0 15px 35px rgba(0,59,115,.13);
 }
 
 .service:before{
@@ -358,41 +398,43 @@ left:0;
 top:0;
 width:100%;
 height:4px;
-background:var(--gold);
+background:linear-gradient(90deg,var(--blue),var(--gold));
 }
 
 .service-icon{
-width:58px;
-height:58px;
+width:60px;
+height:60px;
 display:flex;
 align-items:center;
 justify-content:center;
-border-radius:16px;
+border-radius:17px;
 background:var(--light);
 font-size:30px;
-margin-bottom:16px;
+margin-bottom:17px;
 }
 
 .service h3{
 color:var(--blue);
-margin-bottom:8px;
+margin-bottom:9px;
+font-size:19px;
 }
 
 .service p{
 color:var(--gray);
 font-size:14px;
-line-height:1.6;
+line-height:1.65;
+min-height:67px;
 }
 
 .service a{
 display:inline-block;
-margin-top:14px;
+margin-top:15px;
 color:var(--blue2);
 font-size:13px;
 font-weight:bold;
 }
 
-/* WHY */
+/* ================= WHY ================= */
 
 .why{
 background:white;
@@ -405,14 +447,20 @@ gap:22px;
 }
 
 .why-card{
-padding:30px;
-border-radius:20px;
+padding:32px;
+border-radius:21px;
 background:linear-gradient(145deg,#f7fbff,#fff);
-border:1px solid #e4edf7;
+border:1px solid var(--border);
+transition:.3s;
+}
+
+.why-card:hover{
+transform:translateY(-5px);
+box-shadow:0 12px 30px rgba(0,0,0,.07);
 }
 
 .why-icon{
-font-size:35px;
+font-size:37px;
 margin-bottom:15px;
 }
 
@@ -423,10 +471,10 @@ margin-bottom:10px;
 
 .why-card p{
 color:var(--gray);
-line-height:1.6;
+line-height:1.65;
 }
 
-/* UPDATES */
+/* ================= UPDATES ================= */
 
 .updates{
 background:var(--light);
@@ -440,10 +488,15 @@ gap:20px;
 
 .update{
 background:white;
-padding:25px;
-border-radius:18px;
+padding:26px;
+border-radius:20px;
 border-left:5px solid var(--gold);
-box-shadow:0 5px 15px rgba(0,0,0,.07);
+box-shadow:0 6px 20px rgba(0,0,0,.06);
+transition:.3s;
+}
+
+.update:hover{
+transform:translateY(-5px);
 }
 
 .update-icon{
@@ -459,21 +512,21 @@ margin-bottom:10px;
 .update p{
 color:var(--gray);
 font-size:14px;
-line-height:1.6;
+line-height:1.65;
 }
 
 .update-btn{
 display:inline-block;
-margin-top:16px;
+margin-top:17px;
 background:var(--blue);
 color:white;
-padding:9px 14px;
+padding:9px 15px;
 border-radius:20px;
 font-size:12px;
 font-weight:bold;
 }
 
-/* ABOUT */
+/* ================= ABOUT ================= */
 
 .about{
 background:white;
@@ -482,15 +535,16 @@ background:white;
 .about-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:35px;
+gap:38px;
 align-items:center;
 }
 
 .about-box{
 background:linear-gradient(135deg,var(--blue),var(--blue2));
 color:white;
-padding:40px;
-border-radius:25px;
+padding:42px;
+border-radius:27px;
+box-shadow:0 15px 35px rgba(0,59,115,.15);
 }
 
 .about-box .tag{
@@ -501,17 +555,17 @@ margin-bottom:12px;
 
 .about-box h2{
 font-size:34px;
-margin-bottom:15px;
+margin-bottom:16px;
 }
 
 .about-box p{
-line-height:1.8;
+line-height:1.85;
 color:#eaf4ff;
 }
 
 .about-points{
 display:grid;
-gap:15px;
+gap:18px;
 }
 
 .about-point{
@@ -521,14 +575,15 @@ align-items:flex-start;
 }
 
 .about-point-icon{
-width:42px;
-height:42px;
-border-radius:12px;
+width:45px;
+height:45px;
+border-radius:13px;
 background:var(--light);
 display:flex;
 align-items:center;
 justify-content:center;
 flex-shrink:0;
+font-size:21px;
 }
 
 .about-point h3{
@@ -539,29 +594,30 @@ margin-bottom:4px;
 .about-point p{
 color:var(--gray);
 font-size:14px;
-line-height:1.5;
+line-height:1.6;
 }
 
-/* CTA */
+/* ================= CTA ================= */
 
 .cta{
-background:linear-gradient(120deg,var(--blue),var(--blue2));
+background:
+linear-gradient(120deg,var(--blue),var(--blue2));
 color:white;
 text-align:center;
-padding:65px 20px;
+padding:70px 20px;
 }
 
 .cta h2{
-font-size:38px;
-margin-bottom:12px;
+font-size:39px;
+margin-bottom:13px;
 }
 
 .cta p{
 color:#e4f2ff;
-margin-bottom:25px;
+margin-bottom:27px;
 }
 
-/* CONTACT */
+/* ================= CONTACT ================= */
 
 .contact{
 background:#f5f8fc;
@@ -575,66 +631,73 @@ gap:25px;
 
 .contact-card{
 background:white;
-padding:30px;
-border-radius:20px;
-box-shadow:0 5px 18px rgba(0,0,0,.07);
+padding:32px;
+border-radius:22px;
+box-shadow:0 6px 20px rgba(0,0,0,.07);
 }
 
 .contact-card h3{
 color:var(--blue);
-margin-bottom:20px;
+margin-bottom:22px;
+font-size:22px;
 }
 
 .contact-item{
 display:flex;
 gap:13px;
-margin:17px 0;
+margin:18px 0;
 color:#555;
-line-height:1.5;
+line-height:1.6;
 }
 
 .contact-item b{
 color:var(--blue);
 }
 
+.contact-item a{
+color:var(--blue2);
+font-weight:bold;
+}
+
 .map-box{
-min-height:280px;
-border-radius:20px;
+min-height:310px;
+border-radius:22px;
 background:linear-gradient(135deg,#dceeff,#f8fbff);
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
 padding:25px;
+border:1px solid #d9e8f7;
 }
 
 .map-icon{
-font-size:50px;
+font-size:52px;
 margin-bottom:10px;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 
 footer{
 background:var(--dark);
 color:white;
 text-align:center;
-padding:28px 15px;
+padding:32px 15px;
 }
 
 footer .brand{
 color:var(--gold);
 font-weight:bold;
-font-size:17px;
+font-size:19px;
 }
 
 footer p{
-margin:7px 0;
+margin:8px 0;
 font-size:13px;
 color:#cbd9e8;
 }
 
-/* WHATSAPP */
+/* ================= WHATSAPP ================= */
 
 .whatsapp{
 position:fixed;
@@ -648,23 +711,31 @@ color:white;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:31px;
-box-shadow:0 7px 22px rgba(0,0,0,.3);
+font-size:30px;
+box-shadow:0 7px 25px rgba(0,0,0,.3);
 z-index:99999;
+transition:.3s;
 }
 
-/* MOBILE */
+.whatsapp:hover{
+transform:scale(1.08);
+}
 
-@media(max-width:900px){
+/* ================= MOBILE ================= */
+
+@media(max-width:1000px){
 
 .hero-inner{
 grid-template-columns:1fr;
+}
+
+.hero-content{
 text-align:center;
 }
 
-.hero-card{
-max-width:500px;
-margin:auto;
+.hero-text{
+margin-left:auto;
+margin-right:auto;
 }
 
 .hero-buttons{
@@ -677,18 +748,6 @@ grid-template-columns:repeat(2,1fr);
 
 .update-grid{
 grid-template-columns:repeat(2,1fr);
-}
-
-.why-grid{
-grid-template-columns:1fr;
-}
-
-.about-grid{
-grid-template-columns:1fr;
-}
-
-.contact-grid{
-grid-template-columns:1fr;
 }
 
 }
@@ -705,7 +764,7 @@ height:45px;
 }
 
 .logo-name{
-font-size:17px;
+font-size:16px;
 }
 
 .menu{
@@ -721,6 +780,7 @@ width:100%;
 background:var(--blue);
 flex-direction:column;
 gap:0;
+box-shadow:0 10px 20px rgba(0,0,0,.2);
 }
 
 nav.active{
@@ -731,12 +791,12 @@ nav a{
 width:100%;
 padding:15px 20px;
 border-bottom:1px solid rgba(255,255,255,.1);
+border-radius:0;
 }
 
 .nav-contact{
 background:none;
 color:white!important;
-border-radius:0;
 }
 
 .hero{
@@ -744,7 +804,7 @@ min-height:auto;
 }
 
 .hero-inner{
-padding:55px 18px;
+padding:58px 17px;
 }
 
 .hero h1{
@@ -752,7 +812,8 @@ font-size:38px;
 }
 
 .hero-text{
-font-size:17px;
+font-size:16px;
+line-height:1.7;
 }
 
 .hero-card{
@@ -761,7 +822,7 @@ padding:23px;
 
 .stats-grid{
 grid-template-columns:repeat(2,1fr);
-gap:20px 5px;
+gap:22px 5px;
 }
 
 .stat{
@@ -769,35 +830,63 @@ border:none;
 }
 
 .stat strong{
-font-size:24px;
+font-size:25px;
 }
 
 .section{
-padding:60px 15px;
+padding:62px 15px;
+}
+
+.section-head{
+margin-bottom:35px;
 }
 
 .section-head h2{
 font-size:30px;
 }
 
-.service-grid{
-grid-template-columns:1fr;
-}
-
+.service-grid,
 .update-grid{
 grid-template-columns:1fr;
 }
 
+.service p{
+min-height:auto;
+}
+
+.why-grid{
+grid-template-columns:1fr;
+}
+
+.about-grid{
+grid-template-columns:1fr;
+}
+
 .about-box{
-padding:28px 22px;
+padding:29px 22px;
 }
 
 .about-box h2{
 font-size:28px;
 }
 
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+.cta{
+padding:58px 18px;
+}
+
 .cta h2{
 font-size:29px;
+}
+
+.whatsapp{
+width:58px;
+height:58px;
+right:15px;
+bottom:15px;
 }
 
 }
@@ -807,7 +896,7 @@ font-size:29px;
 
 <body>
 
-<!-- HEADER -->
+<!-- ================= HEADER ================= -->
 
 <header>
 
@@ -815,7 +904,7 @@ font-size:29px;
 
 <div class="logo-area">
 
-<img src="my wb logo.jpeg" alt="KCC Logo">
+<img src="my wb logo.jpeg" alt="KCC Gariyaband Logo">
 
 <div class="logo-name">
 KARTIK <span>CHOICE CENTER</span>
@@ -828,11 +917,11 @@ KARTIK <span>CHOICE CENTER</span>
 
 <nav id="nav">
 
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#updates">Updates</a>
-<a href="#about">About</a>
-<a href="#contact" class="nav-contact">Contact</a>
+<a href="#home" onclick="closeMenu()">Home</a>
+<a href="#services" onclick="closeMenu()">Services</a>
+<a href="#updates" onclick="closeMenu()">Updates</a>
+<a href="#about" onclick="closeMenu()">About</a>
+<a href="#contact" class="nav-contact" onclick="closeMenu()">Contact</a>
 
 </nav>
 
@@ -841,7 +930,7 @@ KARTIK <span>CHOICE CENTER</span>
 </header>
 
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 
 <section class="hero" id="home">
 
@@ -902,8 +991,11 @@ Kartik Choice Center & Lok Sewa Kendra
 <div class="hero-list">
 
 <div><span class="check">✓</span> Online Government Services</div>
+
 <div><span class="check">✓</span> PAN & PVC Card Services</div>
+
 <div><span class="check">✓</span> Online Form & Printing</div>
+
 <div><span class="check">✓</span> Jobs & Education Updates</div>
 
 </div>
@@ -915,7 +1007,7 @@ Kartik Choice Center & Lok Sewa Kendra
 </section>
 
 
-<!-- STATS -->
+<!-- ================= STATS ================= -->
 
 <section class="stats">
 
@@ -933,7 +1025,7 @@ Kartik Choice Center & Lok Sewa Kendra
 
 <div class="stat">
 <strong>1000+</strong>
-<span>संतुष्ट ग्राहक</span>
+<span>ग्राहकों की सेवा</span>
 </div>
 
 <div class="stat">
@@ -946,7 +1038,7 @@ Kartik Choice Center & Lok Sewa Kendra
 </section>
 
 
-<!-- SERVICES -->
+<!-- ================= SERVICES ================= -->
 
 <section class="section services" id="services">
 
@@ -956,7 +1048,7 @@ Kartik Choice Center & Lok Sewa Kendra
 
 <div class="small">Our Services</div>
 
-<h2>हमारी सेवाएँ</h2>
+<h2>हमारी प्रमुख सेवाएँ</h2>
 
 <p>
 KCC Gariyaband में उपलब्ध प्रमुख ऑनलाइन, सरकारी एवं डिजिटल सेवाएँ।
@@ -1064,11 +1156,13 @@ KCC Gariyaband में उपलब्ध प्रमुख ऑनलाइ�
 
 
 </div>
+
 </div>
+
 </section>
 
 
-<!-- WHY KCC -->
+<!-- ================= WHY KCC ================= -->
 
 <section class="section why">
 
@@ -1080,36 +1174,60 @@ KCC Gariyaband में उपलब्ध प्रमुख ऑनलाइ�
 
 <h2>KCC को क्यों चुनें?</h2>
 
-<p>सुविधाजनक, भरोसेमंद और ग्राहक-केंद्रित सेवा।</p>
+<p>
+सुविधाजनक, भरोसेमंद और ग्राहक-केंद्रित सेवा।
+</p>
 
 </div>
 
 <div class="why-grid">
 
 <div class="why-card">
+
 <div class="why-icon">⚡</div>
+
 <h3>तेज सेवा</h3>
-<p>आपके ऑनलाइन कार्यों को सरल और सुविधाजनक तरीके से पूरा करने में सहायता।</p>
+
+<p>
+आपके ऑनलाइन कार्यों को सरल और सुविधाजनक तरीके से पूरा करने में सहायता।
+</p>
+
 </div>
 
+
 <div class="why-card">
+
 <div class="why-icon">🔐</div>
-<h3>भरोसेमंद</h3>
-<p>आपके जरूरी दस्तावेजों और आवेदन प्रक्रिया में जिम्मेदारी के साथ सहायता।</p>
+
+<h3>भरोसेमंद सेवा</h3>
+
+<p>
+जरूरी दस्तावेजों और आवेदन प्रक्रिया में जिम्मेदारी के साथ सहायता।
+</p>
+
 </div>
+
 
 <div class="why-card">
+
 <div class="why-icon">🤝</div>
+
 <h3>ग्राहक सहायता</h3>
-<p>काम से जुड़ी जानकारी और आवश्यक सहायता एक ही जगह पर।</p>
+
+<p>
+काम से जुड़ी जानकारी और आवश्यक सहायता एक ही जगह पर।
+</p>
+
 </div>
 
 </div>
+
 </div>
+
 </section>
 
 
-<!-- UPDATES -->
+<!-- ================= UPDATES ================= -->
 
 <section class="section updates" id="updates">
 
@@ -1121,46 +1239,98 @@ KCC Gariyaband में उपलब्ध प्रमुख ऑनलाइ�
 
 <h2>ताज़ा अपडेट</h2>
 
-<p>नौकरी, एडमिशन, सरकारी योजनाओं और ऑनलाइन सेवाओं की जानकारी।</p>
+<p>
+नौकरी, एडमिशन, सरकारी योजनाओं और ऑनलाइन सेवाओं की जानकारी।
+</p>
 
 </div>
 
 <div class="update-grid">
 
+
 <div class="update">
+
 <div class="update-icon">📢</div>
+
 <h3>Job Updates</h3>
-<p>नई सरकारी एवं प्राइवेट भर्ती की जानकारी के लिए KCC से जुड़े रहें।</p>
-<a class="update-btn" href="https://wa.me/917415385054" target="_blank">जानकारी लें</a>
+
+<p>
+नई सरकारी एवं प्राइवेट भर्ती की जानकारी के लिए KCC से जुड़े रहें।
+</p>
+
+<a class="update-btn"
+href="https://wa.me/917415385054"
+target="_blank">
+जानकारी लें
+</a>
+
 </div>
 
+
 <div class="update">
+
 <div class="update-icon">🎓</div>
+
 <h3>Education Updates</h3>
-<p>Admission, Scholarship, Admit Card और Result की जानकारी।</p>
-<a class="update-btn" href="https://wa.me/917415385054" target="_blank">जानकारी लें</a>
+
+<p>
+Admission, Scholarship, Admit Card और Result की जानकारी।
+</p>
+
+<a class="update-btn"
+href="https://wa.me/917415385054"
+target="_blank">
+जानकारी लें
+</a>
+
 </div>
 
+
 <div class="update">
+
 <div class="update-icon">🏛️</div>
+
 <h3>Government Services</h3>
-<p>सरकारी ऑनलाइन सेवाओं और योजनाओं से संबंधित सहायता।</p>
-<a class="update-btn" href="#services">सेवाएँ देखें</a>
+
+<p>
+सरकारी ऑनलाइन सेवाओं और योजनाओं से संबंधित सहायता।
+</p>
+
+<a class="update-btn"
+href="#services">
+सेवाएँ देखें
+</a>
+
 </div>
+
 
 <div class="update">
+
 <div class="update-icon">💬</div>
+
 <h3>WhatsApp Updates</h3>
-<p>नए अपडेट और महत्वपूर्ण जानकारी सीधे WhatsApp पर प्राप्त करें।</p>
-<a class="update-btn" href="https://wa.me/917415385054" target="_blank">WhatsApp</a>
+
+<p>
+नए अपडेट और महत्वपूर्ण जानकारी सीधे WhatsApp पर प्राप्त करें।
+</p>
+
+<a class="update-btn"
+href="https://wa.me/917415385054"
+target="_blank">
+WhatsApp
+</a>
+
+</div>
+
+
 </div>
 
 </div>
-</div>
+
 </section>
 
 
-<!-- ABOUT -->
+<!-- ================= ABOUT ================= -->
 
 <section class="section about" id="about">
 
@@ -1172,15 +1342,24 @@ KCC Gariyaband में उपलब्ध प्रमुख ऑनलाइ�
 
 <h2>हमारे बारे में</h2>
 
+<p>
+Kartik Choice Center & Lok Sewa Kendra, Gariyaband
+</p>
+
 </div>
 
 <div class="about-grid">
 
+
 <div class="about-box">
 
-<div class="tag">KCC Gariyaband</div>
+<div class="tag">
+KCC Gariyaband
+</div>
 
-<h2>आपका अपना Digital Service Center</h2>
+<h2>
+आपका अपना Digital Service Center
+</h2>
 
 <p>
 Kartik Choice Center & Lok Sewa Kendra, Gariyaband
@@ -1193,216 +1372,17 @@ Kartik Choice Center & Lok Sewa Kendra, Gariyaband
 
 <div class="about-points">
 
+
 <div class="about-point">
 
-<div class="about-point-icon">📍</div>
+<div class="about-point-icon">
+📍
+</div>
 
 <div>
+
 <h3>स्थान</h3>
-<p>तिरंगा चौक, छुरा रोड, गरियाबंद, छत्तीसगढ़</p>
-</div>
 
-</div>
-
-
-<div class="about-point">
-
-<div class="about-point-icon">💼</div>
-
-<div>
-<h3>सेवाएँ</h3>
-<p>ऑनलाइन फॉर्म, सरकारी सेवाएँ, प्रिंटिंग एवं डिजिटल सेवाएँ।</p>
-</div>
-
-</div>
-
-
-<div class="about-point">
-
-<div class="about-point-icon">🤝</div>
-
-<div>
-<h3>ग्राहक सेवा</h3>
-<p>ग्राहकों को सरल और सुविधाजनक तरीके से सहायता प्रदान करना हमारा उद्देश्य है।</p>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- CTA -->
-
-<section class="cta">
-
-<h2>किसी ऑनलाइन सेवा की जरूरत है?</h2>
-
-<p>KCC Gariyaband से संपर्क करें और जानकारी प्राप्त करें।</p>
-
-<a href="https://wa.me/917415385054" target="_blank" class="btn btn-gold">
-💬 WhatsApp पर संपर्क करें
-</a>
-
-</section>
-
-
-<!-- CONTACT -->
-
-<section class="section contact" id="contact">
-
-<div class="container">
-
-<div class="section-head">
-
-<div class="small">Contact KCC</div>
-
-<h2>संपर्क करें</h2>
-
-<p>किसी भी सेवा की जानकारी के लिए हमसे संपर्क करें।</p>
-
-</div>
-
-
-<div class="contact-grid">
-
-
-<div class="contact-card">
-
-<h3>📞 KCC Gariyaband</h3>
-
-<div class="contact-item">
-<span>📍</span>
-<div>
-<b>पता</b><br>
+<p>
 तिरंगा चौक, छुरा रोड, गरियाबंद, छत्तीसगढ़
-</div>
-</div>
-
-
-<div class="contact-item">
-<span>📱</span>
-<div>
-<b>मोबाइल</b><br>
-<a href="tel:+917415385054">7415385054</a><br>
-<a href="tel:+919109462054">9109462054</a>
-</div>
-</div>
-
-
-<div class="contact-item">
-<span>💬</span>
-<div>
-<b>WhatsApp</b><br>
-WhatsApp पर सेवा की जानकारी प्राप्त करें।
-</div>
-</div>
-
-
-<a href="https://wa.me/917415385054"
-target="_blank"
-class="btn btn-green">
-💬 WhatsApp करें
-</a>
-
-</div>
-
-
-<div class="map-box">
-
-<div>
-
-<div class="map-icon">📍</div>
-
-<h3>Kartik Choice Center</h3>
-
-<p>
-तिरंगा चौक<br>
-छुरा रोड, गरियाबंद<br>
-छत्तीसगढ़
 </p>
-
-<br>
-
-<a
-href="https://www.google.com/maps/search/?api=1&query=Kartik+Choice+Center+Gariyaband"
-target="_blank"
-class="btn btn-gold">
-🗺️ Google Maps खोलें
-</a>
-
-</div>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-<div class="brand">
-KARTIK CHOICE CENTER
-</div>
-
-<p>
-लोक सेवा केन्द्र • गरियाबंद
-</p>
-
-<p>
-© 2026 Kartik Choice Center. All Rights Reserved.
-</p>
-
-<p>
-Presented by KCC Gariyaband
-</p>
-
-</footer>
-
-
-<!-- WHATSAPP BUTTON -->
-
-<a
-href="https://wa.me/917415385054"
-target="_blank"
-class="whatsapp"
-aria-label="WhatsApp">
-💬
-</a>
-
-
-<script>
-
-function toggleMenu(){
-
-const nav = document.getElementById("nav");
-
-nav.classList.toggle("active");
-
-}
-
-document.querySelectorAll("nav a").forEach(function(link){
-
-link.addEventListener("click",function(){
-
-document.getElementById("nav").classList.remove("active");
-
-});
-
-});
-
-</script>
-
-</body>
-</html>
