@@ -6,10 +6,9 @@
 
 <title>Kartik Choice Center | Gariyaband</title>
 
-<meta name="description" content="Kartik Choice Center Gariyaband - Online Government Services, Digital Services, Graphic Designing, CDR Designs, PAN Card, Voter Card, PVC Card, Printing and Online Forms.">
+<meta name="description" content="Kartik Choice Center Gariyaband - Online Government Services, PAN Card, Voter Card, Ayushman Card, PVC Card, Printing, Digital Services and Professional Graphic Design.">
 
 <style>
-
 *{
     margin:0;
     padding:0;
@@ -33,7 +32,7 @@ body{
     --cyan:#12a4e8;
     --gold:#ffc928;
     --green:#19c86b;
-    --white:#ffffff;
+    --white:#fff;
     --gray:#68758a;
     --border:#e3e8f0;
     --shadow:0 12px 35px rgba(0,0,0,.10);
@@ -100,16 +99,14 @@ header{
 
 nav{
     display:flex;
-    gap:4px;
-    flex-wrap:wrap;
-    justify-content:flex-end;
+    gap:5px;
 }
 
 nav a{
     color:#fff;
-    padding:9px 11px;
+    padding:10px 14px;
     border-radius:22px;
-    font-size:13px;
+    font-size:14px;
     font-weight:bold;
 }
 
@@ -395,10 +392,33 @@ section{
     font-weight:bold;
 }
 
-/* ================= DESIGNING ================= */
+/* ================= DESIGN SECTION ================= */
 
-.designing{
-    background:#ffffff;
+.design{
+    background:#fff;
+}
+
+.design-banner{
+    background:
+    radial-gradient(circle at 90% 10%,rgba(255,201,40,.25),transparent 25%),
+    linear-gradient(135deg,#061a38,#0878bd);
+    color:#fff;
+    border-radius:30px;
+    padding:45px;
+    margin-bottom:35px;
+    text-align:center;
+}
+
+.design-banner h2{
+    font-size:40px;
+    color:var(--gold);
+    margin-bottom:10px;
+}
+
+.design-banner p{
+    color:#dceaff;
+    max-width:800px;
+    margin:auto;
 }
 
 .design-grid{
@@ -409,9 +429,9 @@ section{
 
 .design-card{
     background:#fff;
-    padding:24px;
     border:1px solid var(--border);
     border-radius:22px;
+    padding:25px;
     box-shadow:0 7px 25px rgba(0,0,0,.06);
     transition:.3s;
 }
@@ -422,52 +442,69 @@ section{
 }
 
 .design-icon{
-    width:60px;
-    height:60px;
-    border-radius:16px;
-    background:#fff6d8;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:30px;
-    margin-bottom:15px;
+    font-size:38px;
+    margin-bottom:10px;
 }
 
 .design-card h3{
     color:var(--navy);
-    margin-bottom:7px;
+    margin-bottom:8px;
 }
 
 .design-card p{
     color:var(--gray);
     font-size:14px;
-    min-height:65px;
+    min-height:60px;
 }
 
-.design-card a{
+.design-btn{
     display:block;
+    text-align:center;
     margin-top:15px;
     padding:10px;
-    text-align:center;
-    border-radius:22px;
-    background:#eafaf2;
-    color:#078f49;
+    border-radius:25px;
+    background:var(--navy);
+    color:#fff;
     font-size:13px;
     font-weight:bold;
 }
 
-.design-note{
+.cdr-box{
     margin-top:30px;
-    padding:22px;
-    border-radius:18px;
-    background:#f5f7fb;
-    border:1px solid var(--border);
+    padding:30px;
+    border-radius:24px;
+    background:#fff8db;
+    border:2px solid #f3d15d;
     text-align:center;
-    color:var(--gray);
 }
 
-.design-note strong{
+.cdr-box h3{
     color:var(--navy);
+    font-size:26px;
+    margin-bottom:10px;
+}
+
+.cdr-box p{
+    color:#5d542e;
+    max-width:800px;
+    margin:0 auto 20px;
+}
+
+.cdr-points{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.cdr-points span{
+    background:#fff;
+    border:1px solid #ead16a;
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
 }
 
 /* ================= FEATURE ================= */
@@ -560,6 +597,10 @@ section{
     font-weight:bold;
 }
 
+.points span{
+    color:var(--green);
+}
+
 .highlights{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -642,20 +683,12 @@ section{
 }
 
 .why-icon{
-    width:58px;
-    height:58px;
-    border-radius:16px;
-    background:#eaf5ff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
     font-size:30px;
-    margin-bottom:14px;
+    margin-bottom:10px;
 }
 
 .why-card h3{
     color:var(--navy);
-    margin-bottom:7px;
 }
 
 .why-card p{
@@ -784,7 +817,7 @@ footer{
     font-size:12px;
 }
 
-/* ================= FLOATING WHATSAPP ================= */
+/* ================= FLOATING ================= */
 
 .float{
     position:fixed;
@@ -869,6 +902,14 @@ footer{
     .footer{
         grid-template-columns:1fr 1fr;
     }
+
+    .design-banner{
+        padding:30px 20px;
+    }
+
+    .design-banner h2{
+        font-size:31px;
+    }
 }
 
 @media(max-width:600px){
@@ -922,15 +963,14 @@ footer{
         grid-template-columns:1fr;
     }
 
-    .feature h2{
-        font-size:32px;
+    .design-banner h2{
+        font-size:28px;
     }
 
-    .feature-card{
-        padding:25px;
+    .cdr-box{
+        padding:22px 15px;
     }
 }
-
 </style>
 </head>
 
@@ -939,40 +979,32 @@ footer{
 <!-- ================= HEADER ================= -->
 
 <header>
-
 <div class="header">
 
 <a href="#home" class="logo">
-
-<div class="logo-circle">
-KCC
-</div>
+<div class="logo-circle">KCC</div>
 
 <div class="logo-text">
 Kartik <span>Choice Center</span>
 <small>Gariyaband • Digital Service Center</small>
 </div>
-
 </a>
 
-<div class="menu"
-onclick="document.getElementById('nav').classList.toggle('show')">
+<div class="menu" onclick="document.getElementById('nav').classList.toggle('show')">
 ☰
 </div>
 
 <nav id="nav">
-
 <a href="#home">Home</a>
 <a href="#services">Services</a>
-<a href="#designing">Designing</a>
+<a href="#design">Design</a>
 <a href="#about">About</a>
 <a href="#process">Process</a>
+<a href="#why">Why KCC</a>
 <a href="#contact">Contact</a>
-
 </nav>
 
 </div>
-
 </header>
 
 
@@ -996,7 +1028,7 @@ onclick="document.getElementById('nav').classList.toggle('show')">
 <p>
 Gariyaband में PAN Card, Voter Card,
 Ayushman Card, PVC Card, Online Forms,
-Printing, Designing और कई Digital Services एक ही जगह।
+Printing और कई Digital Services एक ही जगह।
 </p>
 
 <div class="buttons">
@@ -1009,7 +1041,7 @@ Printing, Designing और कई Digital Services एक ही जगह।
 📞 Call करें
 </a>
 
-<a href="https://wa.me/917415385054" target="_blank" class="btn white">
+<a href="https://wa.me/917415385054" class="btn white" target="_blank">
 💬 WhatsApp
 </a>
 
@@ -1026,9 +1058,7 @@ KCC
 
 <h2>Kartik Choice Center</h2>
 
-<p>
-तिरंगा चौक, छुरा रोड, गरियाबंद
-</p>
+<p>तिरंगा चौक, छुरा रोड, गरियाबंद</p>
 
 <div class="quick">
 
@@ -1048,8 +1078,8 @@ PVC Card
 </div>
 
 <div>
-<b>🎨</b>
-Designing
+<b>📝</b>
+Online Form
 </div>
 
 </div>
@@ -1057,7 +1087,6 @@ Designing
 </div>
 
 </div>
-
 </section>
 
 
@@ -1078,8 +1107,8 @@ Designing
 </div>
 
 <div class="stat">
-<strong>20+</strong>
-<span>Design Services</span>
+<strong>100%</strong>
+<span>Customer Support</span>
 </div>
 
 <div class="stat">
@@ -1099,243 +1128,128 @@ Designing
 <div class="container">
 
 <div class="heading">
-
 <small>OUR SERVICES</small>
-
 <h2>हमारी प्रमुख सेवाएं</h2>
-
 <p>
 किसी Service की जानकारी या काम के लिए नीचे दिए गए WhatsApp बटन पर क्लिक करें।
 </p>
-
 </div>
-
 
 <div class="service-grid">
 
 
-<!-- 1 -->
+<!-- PAN -->
 
 <div class="service">
-
 <div class="icon">🪪</div>
-
 <h3>PAN Card</h3>
-
-<p>
-नया PAN Card और Correction से संबंधित सेवा।
-</p>
+<p>नया PAN Card और Correction से संबंधित सेवा।</p>
 
 <a class="service-btn"
-href="https://wa.me/917415385054?text=Namaste%20KCC%20🙏%0AMujhe%20PAN%20Card%20ki%20Service%20chahiye."
+href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20PAN%20Card%20ki%20Service%20chahiye."
 target="_blank">
-💬 संपर्क करें
+💬 PAN Card के लिए संपर्क करें
 </a>
-
 </div>
 
 
-<!-- 2 -->
+<!-- VOTER -->
 
 <div class="service">
-
 <div class="icon">🗳️</div>
-
 <h3>Voter Card</h3>
-
-<p>
-Voter Card आवेदन और Correction संबंधी सहायता।
-</p>
+<p>Voter Card आवेदन और Correction संबंधी सहायता।</p>
 
 <a class="service-btn"
-href="https://wa.me/917415385054?text=Namaste%20KCC%20🙏%0AMujhe%20Voter%20Card%20ki%20Service%20chahiye."
+href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20Voter%20Card%20ki%20Service%20chahiye."
 target="_blank">
-💬 संपर्क करें
+💬 Voter Card के लिए संपर्क करें
 </a>
-
 </div>
 
 
-<!-- 3 -->
+<!-- AYUSHMAN -->
 
 <div class="service">
-
 <div class="icon">💳</div>
-
 <h3>Ayushman Card</h3>
-
-<p>
-Ayushman Card संबंधी ऑनलाइन सहायता।
-</p>
+<p>Ayushman Card संबंधी ऑनलाइन सहायता।</p>
 
 <a class="service-btn"
-href="https://wa.me/917415385054?text=Namaste%20KCC%20🙏%0AMujhe%20Ayushman%20Card%20ki%20Service%20chahiye."
+href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20Ayushman%20Card%20ki%20Service%20chahiye."
 target="_blank">
-💬 संपर्क करें
+💬 Ayushman के लिए संपर्क करें
 </a>
-
 </div>
 
 
-<!-- 4 -->
+<!-- PVC -->
 
 <div class="service">
-
 <div class="icon">💳</div>
-
 <h3>PVC Card</h3>
-
-<p>
-PAN, Ayushman, e-Shram और ID PVC Card Printing।
-</p>
+<p>PAN, Ayushman, e-Shram और ID PVC Card Printing।</p>
 
 <a class="service-btn"
-href="https://wa.me/917415385054?text=Namaste%20KCC%20🙏%0AMujhe%20PVC%20Card%20banwana%20hai."
+href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20PVC%20Card%20banwana%20hai."
 target="_blank">
-💬 संपर्क करें
+💬 PVC Card के लिए संपर्क करें
 </a>
-
 </div>
 
 
-<!-- 5 -->
+<!-- E SHRAm -->
 
 <div class="service">
-
 <div class="icon">👷</div>
-
 <h3>e-Shram Card</h3>
-
-<p>
-e-Shram Card से संबंधित ऑनलाइन सेवा।
-</p>
+<p>e-Shram Card से संबंधित ऑनलाइन सेवा।</p>
 
 <a class="service-btn"
-href="https://wa.me/917415385054?text=Namaste%20KCC%20🙏%0AMujhe%20e-Shram%20Card%20ki%20Service%20chahiye."
+href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20e-Shram%20Card%20ki%20Service%20chahiye."
 target="_blank">
-💬 संपर्क करें
+💬 e-Shram के लिए संपर्क करें
 </a>
-
 </div>
 
 
-<!-- 6 -->
+<!-- LABOUR -->
 
 <div class="service">
-
 <div class="icon">👷‍♂️</div>
-
 <h3>Labour Card</h3>
-
-<p>
-Labour Card एवं श्रमिक योजनाओं की सहायता।
-</p>
+<p>Labour Card एवं श्रमिक योजनाओं की सहायता।</p>
 
 <a class="service-btn"
-href="https://wa.me/917415385054?text=Namaste%20KCC%20🙏%0AMujhe%20Labour%20Card%20ki%20Service%20chahiye."
+href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20Labour%20Card%20ki%20Service%20chahiye."
 target="_blank">
-💬 संपर्क करें
+💬 Labour Card के लिए संपर्क करें
 </a>
-
 </div>
 
 
-<!-- 7 -->
+<!-- RATION -->
 
 <div class="service">
-
 <div class="icon">🍚</div>
-
 <h3>Ration Card</h3>
-
-<p>
-Ration Card संबंधी ऑनलाइन सहायता।
-</p>
+<p>Ration Card संबंधी ऑनलाइन सहायता।</p>
 
 <a class="service-btn"
-href="https://wa.me/917415385054?text=Namaste%20KCC%20🙏%0AMujhe%20Ration%20Card%20ki%20Service%20chahiye."
+href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20Ration%20Card%20ki%20Service%20chahiye."
 target="_blank">
-💬 संपर्क करें
+💬 Ration Card के लिए संपर्क करें
 </a>
-
 </div>
 
 
-<!-- 8 -->
+<!-- ONLINE FORM -->
 
 <div class="service">
-
 <div class="icon">📝</div>
-
 <h3>Online Form</h3>
-
-<p>
-School, College, Government और अन्य Online Forms।
-</p>
+<p>School, College, Government और अन्य Online Forms।</p>
 
 <a class="service-btn"
-href="https://wa.me/917415385054?text=Namaste%20KCC%20🙏%0AMujhe%20Online%20Form%20bharwana%20hai."
-target="_blank">
-💬 संपर्क करें
-</a>
-
-</div>
-
-
-<!-- 9 -->
-
-<div class="service">
-
-<div class="icon">🎓</div>
-
-<h3>Scholarship</h3>
-
-<p>
-Scholarship और शिक्षा से संबंधित Online Forms।
-</p>
-
-<a class="service-btn"
-href="https://wa.me/917415385054?text=Namaste%20KCC%20🙏%0AMujhe%20Scholarship%20Form%20bharwana%20hai."
-target="_blank">
-💬 संपर्क करें
-</a>
-
-</div>
-
-
-<!-- 10 -->
-
-<div class="service">
-
-<div class="icon">🚗</div>
-
-<h3>Driving Licence</h3>
-
-<p>
-Driving Licence संबंधी ऑनलाइन सहायता।
-</p>
-
-<a class="service-btn"
-href="https://wa.me/917415385054?text=Namaste%20KCC%20🙏%0AMujhe%20Driving%20Licence%20ki%20Service%20chahiye."
-target="_blank">
-💬 संपर्क करें
-</a>
-
-</div>
-
-
-<!-- 11 -->
-
-<div class="service">
-
-<div class="icon">📑</div>
-
-<h3>RC PDF</h3>
-
-<p>
-Vehicle RC PDF और संबंधित ऑनलाइन सेवा।
-</p>
-
-<a class="service-btn"
-href="https://wa.me/917415385054?text=Namaste%20KCC%20🙏%0AMujhe%20RC%20PDF%20ki%20Service%20chahiye."
-targ
+href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20Online%20Form%20bharwana%20hai."
+target="
