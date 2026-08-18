@@ -6,988 +6,862 @@
 
 <title>Kartik Choice Center | Gariyaband</title>
 
-<meta name="description" content="Kartik Choice Center Gariyaband - Online Government Services, PAN Card, Voter Card, Ayushman Card, PVC Card, Printing, Digital Services and Professional Graphic Design.">
+<meta name="description" content="Kartik Choice Center Gariyaband - Online Government Services, PAN Card, Voter Card, Ayushman Card, PVC Card, Printing, Graphic Design and Digital Services.">
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box}
 
-html{
-    scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth}
 
 body{
-    font-family:Arial,"Noto Sans Devanagari",sans-serif;
-    background:#f5f7fb;
-    color:#172033;
-    line-height:1.6;
+font-family:Arial,"Noto Sans Devanagari",sans-serif;
+background:#f5f7fb;
+color:#172033;
+line-height:1.6;
 }
 
 :root{
-    --navy:#061a38;
-    --blue:#0878bd;
-    --cyan:#12a4e8;
-    --gold:#ffc928;
-    --green:#19c86b;
-    --white:#fff;
-    --gray:#68758a;
-    --border:#e3e8f0;
-    --shadow:0 12px 35px rgba(0,0,0,.10);
+--navy:#061a38;
+--blue:#0878bd;
+--cyan:#12a4e8;
+--gold:#ffc928;
+--green:#19c86b;
+--white:#fff;
+--gray:#68758a;
+--border:#e3e8f0;
+--shadow:0 12px 35px rgba(0,0,0,.10);
 }
 
-a{
-    text-decoration:none;
-}
-
-/* ================= HEADER ================= */
+a{text-decoration:none}
 
 header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:var(--navy);
-    box-shadow:0 4px 20px rgba(0,0,0,.2);
+position:sticky;
+top:0;
+z-index:1000;
+background:var(--navy);
+box-shadow:0 4px 20px rgba(0,0,0,.2);
 }
 
 .header{
-    max-width:1200px;
-    margin:auto;
-    min-height:75px;
-    padding:10px 20px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+max-width:1200px;
+margin:auto;
+min-height:75px;
+padding:10px 20px;
+display:flex;
+align-items:center;
+justify-content:space-between;
 }
 
 .logo{
-    display:flex;
-    align-items:center;
-    gap:10px;
+display:flex;
+align-items:center;
+gap:10px;
 }
 
 .logo-circle{
-    width:52px;
-    height:52px;
-    border-radius:50%;
-    background:#fff;
-    border:3px solid var(--gold);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:var(--navy);
-    font-weight:900;
+width:52px;
+height:52px;
+border-radius:50%;
+background:#fff;
+border:3px solid var(--gold);
+display:flex;
+align-items:center;
+justify-content:center;
+color:var(--navy);
+font-weight:900;
 }
 
 .logo-text{
-    color:#fff;
-    font-size:19px;
-    font-weight:900;
+color:#fff;
+font-size:19px;
+font-weight:900;
 }
 
-.logo-text span{
-    color:var(--gold);
-}
+.logo-text span{color:var(--gold)}
 
 .logo-text small{
-    display:block;
-    color:#c9d6e8;
-    font-size:9px;
+display:block;
+color:#c9d6e8;
+font-size:9px;
 }
 
 nav{
-    display:flex;
-    gap:5px;
+display:flex;
+gap:5px;
 }
 
 nav a{
-    color:#fff;
-    padding:10px 14px;
-    border-radius:22px;
-    font-size:14px;
-    font-weight:bold;
+color:#fff;
+padding:10px 14px;
+border-radius:22px;
+font-size:14px;
+font-weight:bold;
 }
 
 nav a:hover{
-    background:rgba(255,255,255,.1);
-    color:var(--gold);
+background:rgba(255,255,255,.1);
+color:var(--gold);
 }
 
 .menu{
-    display:none;
-    color:#fff;
-    font-size:30px;
-    cursor:pointer;
+display:none;
+color:#fff;
+font-size:30px;
+cursor:pointer;
 }
 
-/* ================= HERO ================= */
+/* HERO */
 
 .hero{
-    color:#fff;
-    background:
-    radial-gradient(circle at 80% 15%,rgba(18,164,232,.35),transparent 25%),
-    linear-gradient(135deg,#06152f,#08447e,#0878bd);
+color:#fff;
+background:
+radial-gradient(circle at 80% 15%,rgba(18,164,232,.35),transparent 25%),
+linear-gradient(135deg,#06152f,#08447e,#0878bd);
 }
 
 .hero-inner{
-    max-width:1200px;
-    min-height:620px;
-    margin:auto;
-    padding:70px 20px;
-    display:grid;
-    grid-template-columns:1.1fr .9fr;
-    gap:45px;
-    align-items:center;
+max-width:1200px;
+min-height:620px;
+margin:auto;
+padding:70px 20px;
+display:grid;
+grid-template-columns:1.1fr .9fr;
+gap:45px;
+align-items:center;
 }
 
 .badge{
-    display:inline-block;
-    padding:9px 17px;
-    border-radius:30px;
-    color:var(--gold);
-    background:rgba(255,201,40,.12);
-    border:1px solid rgba(255,201,40,.35);
-    font-weight:bold;
-    margin-bottom:20px;
+display:inline-block;
+padding:9px 17px;
+border-radius:30px;
+color:var(--gold);
+background:rgba(255,201,40,.12);
+border:1px solid rgba(255,201,40,.35);
+font-weight:bold;
+margin-bottom:20px;
 }
 
 .hero h1{
-    font-size:55px;
-    line-height:1.1;
-    margin-bottom:18px;
+font-size:55px;
+line-height:1.1;
+margin-bottom:18px;
 }
 
-.hero h1 span{
-    color:var(--gold);
-}
+.hero h1 span{color:var(--gold)}
 
 .hero p{
-    max-width:680px;
-    color:#dceaff;
-    font-size:17px;
-    margin-bottom:28px;
+max-width:680px;
+color:#dceaff;
+font-size:17px;
+margin-bottom:28px;
 }
 
 .buttons{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
+display:flex;
+flex-wrap:wrap;
+gap:12px;
 }
 
 .btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    min-height:50px;
-    padding:12px 21px;
-    border-radius:30px;
-    font-weight:900;
-    transition:.3s;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+min-height:50px;
+padding:12px 21px;
+border-radius:30px;
+font-weight:900;
+transition:.3s;
 }
 
-.btn:hover{
-    transform:translateY(-3px);
-}
+.btn:hover{transform:translateY(-3px)}
 
-.gold{
-    background:var(--gold);
-    color:var(--navy);
-}
-
-.green{
-    background:var(--green);
-    color:#fff;
-}
-
-.white{
-    background:#fff;
-    color:var(--navy);
-}
-
-/* HERO CARD */
+.gold{background:var(--gold);color:var(--navy)}
+.green{background:var(--green);color:#fff}
+.white{background:#fff;color:var(--navy)}
 
 .hero-card{
-    padding:30px;
-    border-radius:28px;
-    background:rgba(255,255,255,.10);
-    border:1px solid rgba(255,255,255,.25);
-    text-align:center;
+padding:30px;
+border-radius:28px;
+background:rgba(255,255,255,.10);
+border:1px solid rgba(255,255,255,.25);
+text-align:center;
 }
 
 .big-logo{
-    width:115px;
-    height:115px;
-    margin:auto;
-    border-radius:50%;
-    background:#fff;
-    border:5px solid var(--gold);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:var(--navy);
-    font-size:25px;
-    font-weight:900;
+width:115px;
+height:115px;
+margin:auto;
+border-radius:50%;
+background:#fff;
+border:5px solid var(--gold);
+display:flex;
+align-items:center;
+justify-content:center;
+color:var(--navy);
+font-size:25px;
+font-weight:900;
 }
 
 .hero-card h2{
-    color:var(--gold);
-    margin-top:15px;
+color:var(--gold);
+margin-top:15px;
 }
 
 .hero-card p{
-    margin:5px auto 20px;
-    font-size:14px;
+margin:5px auto 20px;
+font-size:14px;
 }
 
 .quick{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
 }
 
 .quick div{
-    padding:15px 8px;
-    border-radius:15px;
-    background:rgba(255,255,255,.09);
+padding:15px 8px;
+border-radius:15px;
+background:rgba(255,255,255,.09);
 }
 
 .quick b{
-    display:block;
-    font-size:27px;
+display:block;
+font-size:27px;
 }
 
-/* ================= STATS ================= */
+/* STATS */
 
 .stats{
-    margin-top:-35px;
-    position:relative;
-    z-index:5;
-    padding:0 20px;
+margin-top:-35px;
+position:relative;
+z-index:5;
+padding:0 20px;
 }
 
 .stats-box{
-    max-width:1050px;
-    margin:auto;
-    background:#fff;
-    border-radius:22px;
-    box-shadow:var(--shadow);
-    padding:23px;
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
+max-width:1050px;
+margin:auto;
+background:#fff;
+border-radius:22px;
+box-shadow:var(--shadow);
+padding:23px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
 }
 
 .stat{
-    text-align:center;
-    border-right:1px solid var(--border);
+text-align:center;
+border-right:1px solid var(--border);
 }
 
-.stat:last-child{
-    border:0;
-}
+.stat:last-child{border:0}
 
 .stat strong{
-    display:block;
-    color:var(--blue);
-    font-size:28px;
+display:block;
+color:var(--blue);
+font-size:28px;
 }
 
 .stat span{
-    color:var(--gray);
-    font-size:13px;
+color:var(--gray);
+font-size:13px;
 }
 
-/* ================= COMMON ================= */
+/* COMMON */
 
-section{
-    padding:80px 20px;
-}
+section{padding:80px 20px}
 
 .container{
-    max-width:1200px;
-    margin:auto;
+max-width:1200px;
+margin:auto;
 }
 
 .heading{
-    max-width:750px;
-    margin:0 auto 40px;
-    text-align:center;
+max-width:750px;
+margin:0 auto 40px;
+text-align:center;
 }
 
 .heading small{
-    color:var(--blue);
-    font-weight:900;
-    letter-spacing:2px;
+color:var(--blue);
+font-weight:900;
+letter-spacing:2px;
 }
 
 .heading h2{
-    color:var(--navy);
-    font-size:40px;
-    margin:8px 0;
+color:var(--navy);
+font-size:40px;
+margin:8px 0;
 }
 
-.heading p{
-    color:var(--gray);
-}
+.heading p{color:var(--gray)}
 
-/* ================= SERVICES ================= */
+/* SERVICES */
 
-.services{
-    background:#f5f7fb;
-}
+.services{background:#f5f7fb}
 
 .service-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
 }
 
 .service{
-    background:#fff;
-    border:1px solid var(--border);
-    border-radius:20px;
-    padding:24px;
-    box-shadow:0 6px 22px rgba(0,0,0,.05);
-    transition:.3s;
+background:#fff;
+border:1px solid var(--border);
+border-radius:20px;
+padding:24px;
+box-shadow:0 6px 22px rgba(0,0,0,.05);
+transition:.3s;
 }
 
 .service:hover{
-    transform:translateY(-6px);
-    box-shadow:var(--shadow);
+transform:translateY(-6px);
+box-shadow:var(--shadow);
 }
 
 .icon{
-    width:60px;
-    height:60px;
-    border-radius:16px;
-    background:#eaf5ff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:29px;
-    margin-bottom:15px;
+width:60px;
+height:60px;
+border-radius:16px;
+background:#eaf5ff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:29px;
+margin-bottom:15px;
 }
 
 .service h3{
-    color:var(--navy);
-    margin-bottom:7px;
+color:var(--navy);
+margin-bottom:7px;
 }
 
 .service p{
-    color:var(--gray);
-    font-size:14px;
-    min-height:65px;
+color:var(--gray);
+font-size:14px;
+min-height:65px;
 }
 
 .service-btn{
-    display:block;
-    margin-top:15px;
-    padding:10px;
-    text-align:center;
-    border-radius:22px;
-    background:#eafaf2;
-    color:#078f49;
-    font-size:13px;
-    font-weight:bold;
+display:block;
+margin-top:15px;
+padding:10px;
+text-align:center;
+border-radius:22px;
+background:#eafaf2;
+color:#078f49;
+font-size:13px;
+font-weight:bold;
 }
 
-/* ================= DESIGN SECTION ================= */
+/* DESIGN SECTION */
 
 .design{
-    background:#fff;
+background:#fff;
 }
 
-.design-banner{
-    background:
-    radial-gradient(circle at 90% 10%,rgba(255,201,40,.25),transparent 25%),
-    linear-gradient(135deg,#061a38,#0878bd);
-    color:#fff;
-    border-radius:30px;
-    padding:45px;
-    margin-bottom:35px;
-    text-align:center;
+.design-box{
+background:linear-gradient(135deg,#061a38,#0878bd);
+border-radius:30px;
+padding:45px;
+color:#fff;
+margin-bottom:35px;
 }
 
-.design-banner h2{
-    font-size:40px;
-    color:var(--gold);
-    margin-bottom:10px;
+.design-box h2{
+font-size:40px;
+margin:10px 0;
 }
 
-.design-banner p{
-    color:#dceaff;
-    max-width:800px;
-    margin:auto;
+.design-box p{
+color:#dceaff;
+max-width:800px;
 }
 
 .design-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
 }
 
 .design-card{
-    background:#fff;
-    border:1px solid var(--border);
-    border-radius:22px;
-    padding:25px;
-    box-shadow:0 7px 25px rgba(0,0,0,.06);
-    transition:.3s;
+background:#fff;
+border:1px solid var(--border);
+border-radius:22px;
+padding:25px;
+box-shadow:0 7px 25px rgba(0,0,0,.06);
+transition:.3s;
 }
 
 .design-card:hover{
-    transform:translateY(-6px);
-    box-shadow:var(--shadow);
+transform:translateY(-5px);
+box-shadow:var(--shadow);
 }
 
 .design-icon{
-    font-size:38px;
-    margin-bottom:10px;
+font-size:38px;
+margin-bottom:12px;
 }
 
 .design-card h3{
-    color:var(--navy);
-    margin-bottom:8px;
+color:var(--navy);
+margin-bottom:8px;
 }
 
 .design-card p{
-    color:var(--gray);
-    font-size:14px;
-    min-height:60px;
+font-size:14px;
+color:var(--gray);
+min-height:60px;
 }
 
 .design-btn{
-    display:block;
-    text-align:center;
-    margin-top:15px;
-    padding:10px;
-    border-radius:25px;
-    background:var(--navy);
-    color:#fff;
-    font-size:13px;
-    font-weight:bold;
+display:block;
+margin-top:15px;
+background:var(--gold);
+color:var(--navy);
+padding:10px;
+text-align:center;
+border-radius:22px;
+font-weight:900;
+font-size:13px;
 }
 
-.cdr-box{
-    margin-top:30px;
-    padding:30px;
-    border-radius:24px;
-    background:#fff8db;
-    border:2px solid #f3d15d;
-    text-align:center;
+.cdr-note{
+margin-top:30px;
+padding:22px;
+border-radius:18px;
+background:#fff8d9;
+border:1px solid #f0d96a;
+color:#5d4a00;
+font-weight:bold;
 }
 
-.cdr-box h3{
-    color:var(--navy);
-    font-size:26px;
-    margin-bottom:10px;
-}
-
-.cdr-box p{
-    color:#5d542e;
-    max-width:800px;
-    margin:0 auto 20px;
-}
-
-.cdr-points{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:10px;
-    margin-bottom:20px;
-}
-
-.cdr-points span{
-    background:#fff;
-    border:1px solid #ead16a;
-    padding:8px 14px;
-    border-radius:20px;
-    font-size:13px;
-    font-weight:bold;
-}
-
-/* ================= FEATURE ================= */
+/* FEATURE */
 
 .feature{
-    background:linear-gradient(135deg,#061a38,#0878bd);
-    color:#fff;
+background:linear-gradient(135deg,#061a38,#0878bd);
+color:#fff;
 }
 
 .feature-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:45px;
-    align-items:center;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:45px;
+align-items:center;
 }
 
 .feature h2{
-    font-size:40px;
-    margin:10px 0 15px;
+font-size:40px;
+margin:10px 0 15px;
 }
 
-.feature p{
-    color:#dceaff;
-}
+.feature p{color:#dceaff}
 
 .feature-list{
-    margin-top:25px;
-    display:grid;
-    gap:12px;
+margin-top:25px;
+display:grid;
+gap:12px;
 }
 
 .feature-list div{
-    padding:13px;
-    border-radius:14px;
-    background:rgba(255,255,255,.08);
+padding:13px;
+border-radius:14px;
+background:rgba(255,255,255,.08);
 }
 
 .feature-card{
-    padding:35px;
-    background:#fff;
-    color:var(--navy);
-    border-radius:25px;
+padding:35px;
+background:#fff;
+color:var(--navy);
+border-radius:25px;
 }
 
-.feature-card h3{
-    font-size:27px;
-}
+.feature-card h3{font-size:27px}
 
 .big{
-    color:var(--blue);
-    font-size:50px;
-    font-weight:900;
-    margin:12px 0;
+color:var(--blue);
+font-size:50px;
+font-weight:900;
+margin:12px 0;
 }
 
-/* ================= ABOUT ================= */
+/* ABOUT */
 
-.about{
-    background:#fff;
-}
+.about{background:#fff}
 
 .about-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-    align-items:center;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
 }
 
 .about-box{
-    padding:35px;
-    border-radius:25px;
-    border:1px solid var(--border);
-    box-shadow:var(--shadow);
+padding:35px;
+border-radius:25px;
+border:1px solid var(--border);
+box-shadow:var(--shadow);
 }
 
 .about-box h2{
-    color:var(--navy);
-    font-size:36px;
-    margin:8px 0 15px;
+color:var(--navy);
+font-size:36px;
+margin:8px 0 15px;
 }
 
-.about-box p{
-    color:var(--gray);
-}
+.about-box p{color:var(--gray)}
 
 .points{
-    margin-top:20px;
-    display:grid;
-    gap:10px;
-    font-weight:bold;
+margin-top:20px;
+display:grid;
+gap:10px;
+font-weight:bold;
 }
 
-.points span{
-    color:var(--green);
-}
+.points span{color:var(--green)}
 
 .highlights{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:15px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
 }
 
 .highlight{
-    padding:27px;
-    border-radius:20px;
-    background:#edf7ff;
-    border:1px solid var(--border);
+padding:27px;
+border-radius:20px;
+background:#edf7ff;
+border:1px solid var(--border);
 }
 
 .highlight strong{
-    display:block;
-    color:var(--blue);
-    font-size:30px;
+display:block;
+color:var(--blue);
+font-size:30px;
 }
 
-/* ================= PROCESS ================= */
+/* PROCESS */
 
-.process{
-    background:#f5f7fb;
-}
+.process{background:#f5f7fb}
 
 .process-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
 }
 
 .process-card{
-    background:#fff;
-    padding:27px 20px;
-    text-align:center;
-    border-radius:20px;
-    border:1px solid var(--border);
+background:#fff;
+padding:27px 20px;
+text-align:center;
+border-radius:20px;
+border:1px solid var(--border);
 }
 
 .number{
-    width:58px;
-    height:58px;
-    margin:auto auto 15px;
-    border-radius:50%;
-    background:var(--navy);
-    color:var(--gold);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-weight:bold;
+width:58px;
+height:58px;
+margin:auto auto 15px;
+border-radius:50%;
+background:var(--navy);
+color:var(--gold);
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
 }
 
-.process-card h3{
-    color:var(--navy);
-}
+.process-card h3{color:var(--navy)}
 
 .process-card p{
-    color:var(--gray);
-    font-size:14px;
-    margin-top:7px;
+color:var(--gray);
+font-size:14px;
+margin-top:7px;
 }
 
-/* ================= WHY KCC ================= */
+/* WHY */
 
-.why{
-    background:#fff;
-}
+.why{background:#fff}
 
 .why-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
 }
 
 .why-card{
-    padding:28px;
-    border:1px solid var(--border);
-    border-radius:22px;
-    box-shadow:0 7px 25px rgba(0,0,0,.05);
+padding:28px;
+border:1px solid var(--border);
+border-radius:22px;
+box-shadow:0 7px 25px rgba(0,0,0,.05);
 }
 
 .why-icon{
-    font-size:30px;
-    margin-bottom:10px;
+font-size:30px;
+margin-bottom:10px;
 }
 
-.why-card h3{
-    color:var(--navy);
-}
+.why-card h3{color:var(--navy)}
 
 .why-card p{
-    color:var(--gray);
-    font-size:14px;
+color:var(--gray);
+font-size:14px;
 }
 
-/* ================= CONTACT ================= */
+/* CONTACT */
 
-.contact{
-    background:#f5f7fb;
-}
+.contact{background:#f5f7fb}
 
 .contact-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:25px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
 }
 
 .contact-card,
 .address-card{
-    padding:32px;
-    border-radius:25px;
+padding:32px;
+border-radius:25px;
 }
 
 .contact-card{
-    background:#fff;
-    border:1px solid var(--border);
+background:#fff;
+border:1px solid var(--border);
 }
 
 .contact-card h3,
 .address-card h3{
-    font-size:27px;
-    margin-bottom:15px;
+font-size:27px;
+margin-bottom:15px;
 }
 
 .contact-item{
-    padding:15px 0;
-    border-bottom:1px solid var(--border);
+padding:15px 0;
+border-bottom:1px solid var(--border);
 }
 
 .contact-item b{
-    display:block;
-    color:var(--navy);
+display:block;
+color:var(--navy);
 }
 
-.contact-item span{
-    color:var(--gray);
-}
+.contact-item span{color:var(--gray)}
 
 .address-card{
-    color:#fff;
-    background:linear-gradient(135deg,#061a38,#0878bd);
+color:#fff;
+background:linear-gradient(135deg,#061a38,#0878bd);
 }
 
-.address-card p{
-    color:#dceaff;
-}
+.address-card p{color:#dceaff}
 
 .address{
-    padding:18px;
-    margin:20px 0;
-    border-radius:15px;
-    background:rgba(255,255,255,.1);
+padding:18px;
+margin:20px 0;
+border-radius:15px;
+background:rgba(255,255,255,.1);
 }
 
-/* ================= CTA ================= */
+/* CTA */
 
 .cta{
-    text-align:center;
-    background:linear-gradient(135deg,#ffc928,#ffdf68);
+text-align:center;
+background:linear-gradient(135deg,#ffc928,#ffdf68);
 }
 
 .cta h2{
-    color:var(--navy);
-    font-size:38px;
+color:var(--navy);
+font-size:38px;
 }
 
-.cta p{
-    margin:10px 0 22px;
-}
+.cta p{margin:10px 0 22px}
 
-/* ================= FOOTER ================= */
+/* FOOTER */
 
 footer{
-    background:#041329;
-    color:#fff;
-    padding:50px 20px 20px;
+background:#041329;
+color:#fff;
+padding:50px 20px 20px;
 }
 
 .footer{
-    max-width:1200px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:1.5fr 1fr 1fr;
-    gap:35px;
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:1.5fr 1fr 1fr;
+gap:35px;
 }
 
-.footer h2 span{
-    color:var(--gold);
-}
+.footer h2 span{color:var(--gold)}
 
 .footer p,
 .footer a{
-    color:#b8c7da;
-    font-size:14px;
+color:#b8c7da;
+font-size:14px;
 }
 
 .footer h3{
-    color:var(--gold);
-    margin-bottom:12px;
+color:var(--gold);
+margin-bottom:12px;
 }
 
 .footer-links{
-    display:grid;
-    gap:8px;
+display:grid;
+gap:8px;
 }
 
 .copyright{
-    max-width:1200px;
-    margin:30px auto 0;
-    padding-top:18px;
-    border-top:1px solid rgba(255,255,255,.1);
-    text-align:center;
-    color:#8494aa;
-    font-size:12px;
+max-width:1200px;
+margin:30px auto 0;
+padding-top:18px;
+border-top:1px solid rgba(255,255,255,.1);
+text-align:center;
+color:#8494aa;
+font-size:12px;
 }
 
-/* ================= FLOATING ================= */
+/* FLOATING */
 
 .float{
-    position:fixed;
-    right:18px;
-    bottom:18px;
-    width:58px;
-    height:58px;
-    border-radius:50%;
-    background:#25d366;
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:27px;
-    z-index:999;
-    box-shadow:0 7px 25px rgba(0,0,0,.25);
+position:fixed;
+right:18px;
+bottom:18px;
+width:58px;
+height:58px;
+border-radius:50%;
+background:#25d366;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:27px;
+z-index:999;
+box-shadow:0 7px 25px rgba(0,0,0,.25);
 }
 
-/* ================= MOBILE ================= */
+/* MOBILE */
 
 @media(max-width:1000px){
 
-    .hero-inner{
-        grid-template-columns:1fr;
-        text-align:center;
-    }
+.hero-inner{
+grid-template-columns:1fr;
+text-align:center;
+}
 
-    .hero p{
-        margin-left:auto;
-        margin-right:auto;
-    }
+.hero p{
+margin-left:auto;
+margin-right:auto;
+}
 
-    .buttons{
-        justify-content:center;
-    }
+.buttons{justify-content:center}
 
-    .service-grid,
-    .design-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
+.service-grid,
+.design-grid{
+grid-template-columns:repeat(2,1fr);
+}
 
-    .process-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
+.process-grid{
+grid-template-columns:repeat(2,1fr);
+}
 }
 
 @media(max-width:800px){
 
-    .menu{
-        display:block;
-    }
+.menu{display:block}
 
-    nav{
-        display:none;
-        position:absolute;
-        left:0;
-        right:0;
-        top:75px;
-        background:var(--navy);
-        padding:10px;
-        flex-direction:column;
-    }
+nav{
+display:none;
+position:absolute;
+left:0;
+right:0;
+top:75px;
+background:var(--navy);
+padding:10px;
+flex-direction:column;
+}
 
-    nav.show{
-        display:flex;
-    }
+nav.show{display:flex}
 
-    nav a{
-        text-align:center;
-    }
+nav a{text-align:center}
 
-    .feature-grid,
-    .about-grid,
-    .contact-grid{
-        grid-template-columns:1fr;
-    }
+.feature-grid,
+.about-grid,
+.contact-grid{
+grid-template-columns:1fr;
+}
 
-    .why-grid{
-        grid-template-columns:1fr 1fr;
-    }
+.why-grid{
+grid-template-columns:1fr 1fr;
+}
 
-    .footer{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .design-banner{
-        padding:30px 20px;
-    }
-
-    .design-banner h2{
-        font-size:31px;
-    }
+.footer{
+grid-template-columns:1fr 1fr;
+}
 }
 
 @media(max-width:600px){
 
-    .logo-text{
-        font-size:15px;
-    }
+.logo-text{font-size:15px}
 
-    .logo-text small{
-        font-size:8px;
-    }
+.logo-text small{font-size:8px}
 
-    .logo-circle{
-        width:46px;
-        height:46px;
-    }
+.logo-circle{
+width:46px;
+height:46px;
+}
 
-    .hero h1{
-        font-size:36px;
-    }
+.hero h1{font-size:36px}
 
-    .hero-inner{
-        padding:55px 18px 70px;
-    }
+.hero-inner{
+padding:55px 18px 70px;
+}
 
-    section{
-        padding:65px 18px;
-    }
+section{padding:65px 18px}
 
-    .heading h2{
-        font-size:31px;
-    }
+.heading h2{font-size:31px}
 
-    .service-grid,
-    .design-grid,
-    .process-grid,
-    .why-grid{
-        grid-template-columns:1fr;
-    }
+.service-grid,
+.process-grid,
+.why-grid,
+.design-grid{
+grid-template-columns:1fr;
+}
 
-    .stats-box{
-        grid-template-columns:1fr 1fr;
-        gap:18px;
-    }
+.stats-box{
+grid-template-columns:1fr 1fr;
+gap:18px;
+}
 
-    .stat{
-        border:0;
-    }
+.stat{border:0}
 
-    .footer{
-        grid-template-columns:1fr;
-    }
+.footer{grid-template-columns:1fr}
 
-    .design-banner h2{
-        font-size:28px;
-    }
+.design-box{
+padding:28px 20px;
+}
 
-    .cdr-box{
-        padding:22px 15px;
-    }
+.design-box h2{
+font-size:31px;
+}
 }
 </style>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- HEADER -->
 
 <header>
 <div class="header">
 
 <a href="#home" class="logo">
+
 <div class="logo-circle">KCC</div>
 
 <div class="logo-text">
 Kartik <span>Choice Center</span>
 <small>Gariyaband • Digital Service Center</small>
 </div>
+
 </a>
 
 <div class="menu" onclick="document.getElementById('nav').classList.toggle('show')">
@@ -1000,7 +874,6 @@ Kartik <span>Choice Center</span>
 <a href="#design">Design</a>
 <a href="#about">About</a>
 <a href="#process">Process</a>
-<a href="#why">Why KCC</a>
 <a href="#contact">Contact</a>
 </nav>
 
@@ -1008,7 +881,7 @@ Kartik <span>Choice Center</span>
 </header>
 
 
-<!-- ================= HERO ================= -->
+<!-- HERO -->
 
 <section class="hero" id="home">
 
@@ -1028,7 +901,7 @@ Kartik <span>Choice Center</span>
 <p>
 Gariyaband में PAN Card, Voter Card,
 Ayushman Card, PVC Card, Online Forms,
-Printing और कई Digital Services एक ही जगह।
+Printing, Graphic Design और कई Digital Services एक ही जगह।
 </p>
 
 <div class="buttons">
@@ -1078,8 +951,8 @@ PVC Card
 </div>
 
 <div>
-<b>📝</b>
-Online Form
+<b>🎨</b>
+Design
 </div>
 
 </div>
@@ -1090,7 +963,7 @@ Online Form
 </section>
 
 
-<!-- ================= STATS ================= -->
+<!-- STATS -->
 
 <div class="stats">
 
@@ -1102,13 +975,13 @@ Online Form
 </div>
 
 <div class="stat">
-<strong>15+</strong>
+<strong>20+</strong>
 <span>Digital Services</span>
 </div>
 
 <div class="stat">
 <strong>100%</strong>
-<span>Customer Support</span>
+<span>Support</span>
 </div>
 
 <div class="stat">
@@ -1117,11 +990,10 @@ Online Form
 </div>
 
 </div>
-
 </div>
 
 
-<!-- ================= SERVICES ================= -->
+<!-- SERVICES -->
 
 <section class="services" id="services">
 
@@ -1138,118 +1010,174 @@ Online Form
 <div class="service-grid">
 
 
-<!-- PAN -->
-
 <div class="service">
 <div class="icon">🪪</div>
 <h3>PAN Card</h3>
 <p>नया PAN Card और Correction से संबंधित सेवा।</p>
-
-<a class="service-btn"
-href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20PAN%20Card%20ki%20Service%20chahiye."
-target="_blank">
-💬 PAN Card के लिए संपर्क करें
-</a>
+<a class="service-btn" href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20PAN%20Card%20ki%20Service%20chahiye." target="_blank">💬 PAN Card के लिए संपर्क करें</a>
 </div>
 
-
-<!-- VOTER -->
 
 <div class="service">
 <div class="icon">🗳️</div>
 <h3>Voter Card</h3>
 <p>Voter Card आवेदन और Correction संबंधी सहायता।</p>
-
-<a class="service-btn"
-href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20Voter%20Card%20ki%20Service%20chahiye."
-target="_blank">
-💬 Voter Card के लिए संपर्क करें
-</a>
+<a class="service-btn" href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20Voter%20Card%20ki%20Service%20chahiye." target="_blank">💬 Voter Card के लिए संपर्क करें</a>
 </div>
 
-
-<!-- AYUSHMAN -->
 
 <div class="service">
 <div class="icon">💳</div>
 <h3>Ayushman Card</h3>
 <p>Ayushman Card संबंधी ऑनलाइन सहायता।</p>
-
-<a class="service-btn"
-href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20Ayushman%20Card%20ki%20Service%20chahiye."
-target="_blank">
-💬 Ayushman के लिए संपर्क करें
-</a>
+<a class="service-btn" href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20Ayushman%20Card%20ki%20Service%20chahiye." target="_blank">💬 Ayushman के लिए संपर्क करें</a>
 </div>
 
-
-<!-- PVC -->
 
 <div class="service">
 <div class="icon">💳</div>
 <h3>PVC Card</h3>
 <p>PAN, Ayushman, e-Shram और ID PVC Card Printing।</p>
-
-<a class="service-btn"
-href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20PVC%20Card%20banwana%20hai."
-target="_blank">
-💬 PVC Card के लिए संपर्क करें
-</a>
+<a class="service-btn" href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20PVC%20Card%20banwana%20hai." target="_blank">💬 PVC Card के लिए संपर्क करें</a>
 </div>
 
-
-<!-- E SHRAm -->
 
 <div class="service">
 <div class="icon">👷</div>
 <h3>e-Shram Card</h3>
 <p>e-Shram Card से संबंधित ऑनलाइन सेवा।</p>
-
-<a class="service-btn"
-href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20e-Shram%20Card%20ki%20Service%20chahiye."
-target="_blank">
-💬 e-Shram के लिए संपर्क करें
-</a>
+<a class="service-btn" href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20e-Shram%20Card%20ki%20Service%20chahiye." target="_blank">💬 e-Shram के लिए संपर्क करें</a>
 </div>
 
-
-<!-- LABOUR -->
 
 <div class="service">
 <div class="icon">👷‍♂️</div>
 <h3>Labour Card</h3>
 <p>Labour Card एवं श्रमिक योजनाओं की सहायता।</p>
-
-<a class="service-btn"
-href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20Labour%20Card%20ki%20Service%20chahiye."
-target="_blank">
-💬 Labour Card के लिए संपर्क करें
-</a>
+<a class="service-btn" href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20Labour%20Card%20ki%20Service%20chahiye." target="_blank">💬 Labour Card के लिए संपर्क करें</a>
 </div>
 
-
-<!-- RATION -->
 
 <div class="service">
 <div class="icon">🍚</div>
 <h3>Ration Card</h3>
 <p>Ration Card संबंधी ऑनलाइन सहायता।</p>
-
-<a class="service-btn"
-href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20Ration%20Card%20ki%20Service%20chahiye."
-target="_blank">
-💬 Ration Card के लिए संपर्क करें
-</a>
+<a class="service-btn" href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20Ration%20Card%20ki%20Service%20chahiye." target="_blank">💬 Ration Card के लिए संपर्क करें</a>
 </div>
 
-
-<!-- ONLINE FORM -->
 
 <div class="service">
 <div class="icon">📝</div>
 <h3>Online Form</h3>
 <p>School, College, Government और अन्य Online Forms।</p>
+<a class="service-btn" href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20Online%20Form%20bharwana%20hai." target="_blank">💬 Form के लिए संपर्क करें</a>
+</div>
 
-<a class="service-btn"
-href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20Online%20Form%20bharwana%20hai."
-target="
+
+<div class="service">
+<div class="icon">🎓</div>
+<h3>Scholarship</h3>
+<p>Scholarship और शिक्षा से संबंधित Online Forms।</p>
+<a class="service-btn" href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20Scholarship%20Form%20bharwana%20hai." target="_blank">💬 Scholarship के लिए संपर्क करें</a>
+</div>
+
+
+<div class="service">
+<div class="icon">🚗</div>
+<h3>Driving Licence</h3>
+<p>Driving Licence संबंधी ऑनलाइन सहायता।</p>
+<a class="service-btn" href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20Driving%20Licence%20ki%20Service%20chahiye." target="_blank">💬 DL के लिए संपर्क करें</a>
+</div>
+
+
+<div class="service">
+<div class="icon">📑</div>
+<h3>RC PDF</h3>
+<p>Vehicle RC PDF और संबंधित ऑनलाइन सेवा।</p>
+<a class="service-btn" href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20RC%20PDF%20ki%20Service%20chahiye." target="_blank">💬 RC के लिए संपर्क करें</a>
+</div>
+
+
+<div class="service">
+<div class="icon">🖨️</div>
+<h3>Printing</h3>
+<p>Colour और Black & White Printing।</p>
+<a class="service-btn" href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20Printing%20Service%20chahiye." target="_blank">💬 Printing के लिए संपर्क करें</a>
+</div>
+
+
+<div class="service">
+<div class="icon">📄</div>
+<h3>Photocopy</h3>
+<p>Documents की Photocopy सेवा।</p>
+<a class="service-btn" href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20Photocopy%20Service%20chahiye." target="_blank">💬 Photocopy के लिए संपर्क करें</a>
+</div>
+
+
+<div class="service">
+<div class="icon">📚</div>
+<h3>Lamination</h3>
+<p>Documents और Certificates की Lamination।</p>
+<a class="service-btn" href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20Lamination%20Service%20chahiye." target="_blank">💬 Lamination के लिए संपर्क करें</a>
+</div>
+
+
+<div class="service">
+<div class="icon">📸</div>
+<h3>Passport Photo</h3>
+<p>Passport Size Photo और Photo Printing।</p>
+<a class="service-btn" href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20Passport%20Photo%20Service%20chahiye." target="_blank">💬 Photo के लिए संपर्क करें</a>
+</div>
+
+
+<div class="service">
+<div class="icon">💼</div>
+<h3>Visiting Card</h3>
+<p>Professional Visiting Card Design और Printing।</p>
+<a class="service-btn" href="https://wa.me/917415385054?text=Namaste%20Kartik%20Choice%20Center%20Gariyaband%20🙏%0AMujhe%20Visiting%20Card%20banwana%20hai." target="_blank">💬 Visiting Card के लिए संपर्क करें</a>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- DESIGN / CDR -->
+
+<section class="design" id="design">
+
+<div class="container">
+
+<div class="design-box">
+
+<small style="color:#ffc928;font-weight:bold;letter-spacing:2px;">
+GRAPHIC DESIGN & CDR
+</small>
+
+<h2>🎨 Professional Design Service</h2>
+
+<p>
+अपने Business, शादी, जन्मोत्सव या किसी भी कार्यक्रम के लिए
+Professional Design बनवाएं। पसंद आने के बाद Payment करें और
+जरूरत के अनुसार Final Design / CDR File उपलब्ध कराई जाएगी।
+</p>
+
+</div>
+
+
+<div class="design-grid">
+
+
+<div class="design-card">
+<div class="design-icon">💍</div>
+<h3>शादी कार्ड Design</h3>
+<p>शादी एवं विवाह समारोह के लिए सुंदर और Professional Card Design।</p>
+<a class="design-btn" href="https://wa.me/917415385054?text=Namaste%20KCC%20🙏%0AMujhe%20Shadi%20Card%20Design%20banwana%20hai." target="_blank">Design बनवाएं</a>
+</div>
+
+
+<div class="design-card">
+<div class="design-icon">🎉</div>
+<h3>जन्मोत्सव Card</h3>
+<p>Birthday और जन्मोत्सव के लिए आकर्षक Card Design।</p>
+<a class="design-btn" href="https://wa.me/917415385054?text=Namaste%20KCC%20🙏%0AMujhe%20Janmotsav%20Card%20Design%20banwana%20hai.
